@@ -7,26 +7,35 @@ class OnboardingBody extends StatelessWidget {
     super.key,
     required this.description,
     required this.title,
-      required this.onNext,
+    required this.onNext,
     required this.onSkip,
+    required this.isLastPage,
   });
   final String title;
   final String description;
-    final VoidCallback onNext;
+  final VoidCallback onNext;
   final VoidCallback onSkip;
+  final bool isLastPage;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 43),
       child: Column(
-  crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(title, style: AppStyles.styleMedium28()),
           const SizedBox(height: 11),
-          Text(description, style: AppStyles.styleRegular14(), textAlign: TextAlign.center),
+          Text(
+            description,
+            style: AppStyles.styleRegular14(),
+            textAlign: TextAlign.center,
+          ),
           const SizedBox(height: 53),
-          CustomElevatedButton(text: "Next", onPressed: onNext),
+          CustomElevatedButton(
+            text: isLastPage ? "Get Started" : "Next",
+            onPressed: onNext,
+          ),
           const SizedBox(height: 14),
           InkWell(
             onTap: onSkip,

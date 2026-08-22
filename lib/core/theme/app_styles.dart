@@ -70,6 +70,17 @@ abstract class AppStyles {
     );
   }
 
+    // Regular 28 - Parentheses around review count
+  static TextStyle styleRegular28({Color? color}) {
+    return TextStyle(
+      color: color ?? AppColors.colorBlack,
+      fontSize: getResponsiveFontSize(fontSize: 28),
+      fontFamily: FontOwner.rubik,
+      fontWeight: FontWeight.w400,
+    );
+  }
+
+
   // Regular 16 - Parentheses around review count
   static TextStyle styleRegular16({Color? color}) {
     return TextStyle(
@@ -126,6 +137,14 @@ abstract class AppStyles {
     return TextStyle(
       color: color ?? AppColors.colorDarkCharcoal,
       fontSize: getResponsiveFontSize(fontSize: 18),
+      fontFamily: FontOwner.rubik,
+      fontWeight: FontWeight.w700,
+    );
+  }
+    static TextStyle styleBold25({Color? color}) {
+    return TextStyle(
+      color: color ?? AppColors.colorEerieBlack,
+      fontSize: getResponsiveFontSize(fontSize: 25),
       fontFamily: FontOwner.rubik,
       fontWeight: FontWeight.w700,
     );

@@ -9,10 +9,12 @@ class OnboardingView extends StatelessWidget {
     required this.onboardingContent,
     required this.onNext,
     required this.onSkip,
+    required this.isLastPage,
   });
   final OnboardingModel onboardingContent;
   final VoidCallback onNext;
   final VoidCallback onSkip;
+  final bool isLastPage;
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +28,7 @@ class OnboardingView extends StatelessWidget {
           description:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
           title: "Find Trusted Doctors",
+          isLastPage: isLastPage,
         ),
       ],
     );
