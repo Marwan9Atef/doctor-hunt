@@ -2,7 +2,7 @@ import 'package:doctor_hunt/core/asset/app_assets.dart';
 import 'package:doctor_hunt/core/router/route_center.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
-import 'package:doctor_hunt/feature/auth/presentation/widgets/rule_cards.dart';
+import 'package:doctor_hunt/feature/auth/presentation/widgets/rules/rule_cards.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';

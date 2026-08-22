@@ -1,7 +1,7 @@
 import 'package:doctor_hunt/feature/auth/data/models/rule_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../core/theme/app_colors.dart';
+import '../../../../../core/theme/app_colors.dart';
 
 class RuleCard extends StatelessWidget {
   const RuleCard({

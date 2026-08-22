@@ -1,5 +1,5 @@
 import 'package:doctor_hunt/feature/auth/data/models/rule_model.dart';
-import 'package:doctor_hunt/feature/auth/presentation/widgets/rule_card.dart';
+import 'package:doctor_hunt/feature/auth/presentation/widgets/rules/rule_card.dart';
 import 'package:flutter/material.dart';
 
 class RuleCards extends StatefulWidget {

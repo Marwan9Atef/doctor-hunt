@@ -17,6 +17,16 @@ abstract class AppStyles {
       letterSpacing: -0.3,
     );
   }
+   // Medium 28 - Section titles, doctor names in list cards
+  static TextStyle styleMedium24({Color? color}) {
+    return TextStyle(
+      color: color ?? AppColors.colorDarkCharcoal,
+      fontSize: getResponsiveFontSize(fontSize: 24),
+      fontFamily: FontOwner.rubik,
+      fontWeight: FontWeight.w500,
+      letterSpacing: -0.3,
+    );
+  }
   // Medium 18 - Section titles, doctor names in list cards
   static TextStyle styleMedium18({Color? color}) {
     return TextStyle(
