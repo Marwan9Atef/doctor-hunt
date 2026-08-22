@@ -17,7 +17,9 @@ class NavBarItem extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Container(
+          AnimatedContainer(
+            duration: Duration(milliseconds: 200),
+            curve: Curves.easeIn,
             padding: const EdgeInsets.all(8),
             decoration: isActive
                 ? BoxDecoration(
