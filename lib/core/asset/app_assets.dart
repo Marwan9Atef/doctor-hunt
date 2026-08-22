@@ -22,9 +22,25 @@ class Assets {
   /// assets/images/admin.svg
   static const String assetsImagesAdmin = "assets/images/admin.svg";
 
+  /// Assets for assetsImagesBook
+  /// assets/images/book.svg
+  static const String assetsImagesBook = "assets/images/book.svg";
+
+  /// Assets for assetsImagesFav
+  /// assets/images/fav.svg
+  static const String assetsImagesFav = "assets/images/fav.svg";
+
+  /// Assets for assetsImagesHome
+  /// assets/images/home.svg
+  static const String assetsImagesHome = "assets/images/home.svg";
+
   /// Assets for assetsImagesLogo
   /// assets/images/logo.svg
   static const String assetsImagesLogo = "assets/images/logo.svg";
+
+  /// Assets for assetsImagesMessage
+  /// assets/images/message.svg
+  static const String assetsImagesMessage = "assets/images/message.svg";
 
   /// Assets for assetsImagesOnboarding1
   /// assets/images/onboarding1.png
