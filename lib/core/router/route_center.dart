@@ -1,6 +1,11 @@
 import 'package:doctor_hunt/feature/auth/presentation/screens/login_screen.dart';
 import 'package:doctor_hunt/feature/auth/presentation/screens/register_screen.dart';
 import 'package:doctor_hunt/feature/auth/presentation/screens/set_rule_screen.dart';
+import 'package:doctor_hunt/feature/book/presentation/screens/book_screen.dart';
+import 'package:doctor_hunt/feature/communicate/presentation/screens/communication_screen.dart';
+import 'package:doctor_hunt/feature/fav/presentation/screens/fav_screen.dart';
+import 'package:doctor_hunt/feature/home/presentation/screens/home_screen.dart';
+import 'package:doctor_hunt/feature/layout/presentation/screens/layout_screen.dart';
 import 'package:doctor_hunt/feature/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -50,6 +55,7 @@ class SetRuleRoute extends GoRouteData with $SetRuleRoute {
     );
   }
 }
+
 @TypedGoRoute<LoginRoute>(path: '/login', name: 'login')
 class LoginRoute extends GoRouteData with $LoginRoute {
   const LoginRoute();
@@ -71,6 +77,7 @@ class LoginRoute extends GoRouteData with $LoginRoute {
     );
   }
 }
+
 @TypedGoRoute<RegisterRoute>(path: '/register', name: 'register')
 class RegisterRoute extends GoRouteData with $RegisterRoute {
   const RegisterRoute();
@@ -90,5 +97,58 @@ class RegisterRoute extends GoRouteData with $RegisterRoute {
         return FadeTransition(opacity: animation, child: child);
       },
     );
+  }
+}
+
+@TypedShellRoute<LayoutShellRoute>(
+  routes: <TypedRoute<RouteData>>[
+    TypedGoRoute<HomeRoute>(path: '/home', name: 'home'),
+    TypedGoRoute<FavRoute>(path: '/fav', name: 'fav'),
+    TypedGoRoute<BookRoute>(path: '/book', name: 'book'),
+    TypedGoRoute<CommunicateRoute>(path: '/communicate', name: 'communicate'),
+  ],
+)
+class LayoutShellRoute extends ShellRouteData {
+  const LayoutShellRoute();
+
+  @override
+  Widget builder(BuildContext context, GoRouterState state, Widget navigator) {
+    return LayoutScreen(child: navigator);
+  }
+}
+
+class HomeRoute extends GoRouteData with $HomeRoute {
+  const HomeRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const HomeScreen();
+  }
+}
+
+class FavRoute extends GoRouteData with $FavRoute {
+  const FavRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const FavScreen();
+  }
+}
+
+class BookRoute extends GoRouteData with $BookRoute {
+  const BookRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const BookScreen();
+  }
+}
+
+class CommunicateRoute extends GoRouteData with $CommunicateRoute {
+  const CommunicateRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const CommunicationScreen();
   }
 }
