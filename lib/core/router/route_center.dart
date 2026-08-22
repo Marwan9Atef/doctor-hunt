@@ -1,4 +1,5 @@
 import 'package:doctor_hunt/feature/auth/presentation/screens/login_screen.dart';
+import 'package:doctor_hunt/feature/auth/presentation/screens/register_screen.dart';
 import 'package:doctor_hunt/feature/auth/presentation/screens/set_rule_screen.dart';
 import 'package:doctor_hunt/feature/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
@@ -63,6 +64,27 @@ class LoginRoute extends GoRouteData with $LoginRoute {
     return CustomTransitionPage<void>(
       key: state.pageKey,
       child: const LoginScreen(),
+      transitionDuration: const Duration(milliseconds: 300),
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        return FadeTransition(opacity: animation, child: child);
+      },
+    );
+  }
+}
+@TypedGoRoute<RegisterRoute>(path: '/register', name: 'register')
+class RegisterRoute extends GoRouteData with $RegisterRoute {
+  const RegisterRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const RegisterScreen();
+  }
+
+  @override
+  Page<void> buildPage(BuildContext context, GoRouterState state) {
+    return CustomTransitionPage<void>(
+      key: state.pageKey,
+      child: const RegisterScreen(),
       transitionDuration: const Duration(milliseconds: 300),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         return FadeTransition(opacity: animation, child: child);
