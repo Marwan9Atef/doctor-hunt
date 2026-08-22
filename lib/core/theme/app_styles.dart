@@ -7,6 +7,16 @@ import 'app_colors.dart';
 import 'font_owner.dart';
 
 abstract class AppStyles {
+    // Medium 28 - Section titles, doctor names in list cards
+  static TextStyle styleMedium28({Color? color}) {
+    return TextStyle(
+      color: color ?? AppColors.colorDarkCharcoal,
+      fontSize: getResponsiveFontSize(fontSize: 28),
+      fontFamily: FontOwner.rubik,
+      fontWeight: FontWeight.w500,
+      letterSpacing: -0.3,
+    );
+  }
   // Medium 18 - Section titles, doctor names in list cards
   static TextStyle styleMedium18({Color? color}) {
     return TextStyle(
@@ -163,10 +173,10 @@ double getScaleFactor() {
   double width = physicalWidth / devicePixelRatio;
 
   if (width < SizeConfig.tablet) {
-    return width / 550;
+    return width / 420;
   } else if (width < SizeConfig.desktop) {
-    return width / 1000;
+    return width / 870;
   } else {
-    return width / 1920;
+    return width / 1790;
   }
 }
