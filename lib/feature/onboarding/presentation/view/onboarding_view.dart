@@ -1,0 +1,36 @@
+import 'package:doctor_hunt/feature/onboarding/data/models/onboarding_model.dart';
+import 'package:doctor_hunt/feature/onboarding/presentation/widgets/onboarding_body.dart';
+import 'package:doctor_hunt/feature/onboarding/presentation/widgets/onboarding_image.dart';
+import 'package:flutter/material.dart';
+
+class OnboardingView extends StatelessWidget {
+  const OnboardingView({
+    super.key,
+    required this.onboardingContent,
+    required this.onNext,
+    required this.onSkip,
+    required this.isLastPage,
+  });
+  final OnboardingModel onboardingContent;
+  final VoidCallback onNext;
+  final VoidCallback onSkip;
+  final bool isLastPage;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        OnboardingImage(imagePath: onboardingContent.imagePath),
+        const SizedBox(height: 50),
+        OnboardingBody(
+          onNext: onNext,
+          onSkip: onSkip,
+          description:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
+          title: "Find Trusted Doctors",
+          isLastPage: isLastPage,
+        ),
+      ],
+    );
+  }
+}
