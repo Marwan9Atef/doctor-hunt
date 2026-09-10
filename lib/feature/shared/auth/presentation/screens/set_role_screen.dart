@@ -2,13 +2,13 @@ import 'package:doctor_hunt/core/asset/app_assets.dart';
 import 'package:doctor_hunt/core/router/route_center.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
-import 'package:doctor_hunt/feature/auth/presentation/widgets/rules/rule_cards.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/roles/role_cards.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
-class SetRuleScreen extends StatelessWidget {
-  const SetRuleScreen({super.key});
+class SetRoleScreen extends StatelessWidget {
+  const SetRoleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class SetRuleScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 32),
-            const RuleCards(),
+            const RoleCards(),
             const SizedBox(height: 32),
             CustomElevatedButton(
               text: "Continue",

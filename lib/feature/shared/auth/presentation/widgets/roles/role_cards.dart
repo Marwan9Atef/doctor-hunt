@@ -1,15 +1,15 @@
-import 'package:doctor_hunt/feature/auth/data/models/rule_model.dart';
-import 'package:doctor_hunt/feature/auth/presentation/widgets/rules/rule_card.dart';
+import 'package:doctor_hunt/feature/shared/auth/data/models/rule_model.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/roles/role_card.dart';
 import 'package:flutter/material.dart';
 
-class RuleCards extends StatefulWidget {
-  const RuleCards({super.key});
+class RoleCards extends StatefulWidget {
+  const RoleCards({super.key});
 
   @override
-  State<RuleCards> createState() => _RuleCardsState();
+  State<RoleCards> createState() => _RoleCardsState();
 }
 
-class _RuleCardsState extends State<RuleCards> {
+class _RoleCardsState extends State<RoleCards> {
   int currentIndex = 0;
 
   @override
@@ -21,11 +21,9 @@ class _RuleCardsState extends State<RuleCards> {
           onTap: () {
             if (currentIndex == index) return;
             currentIndex = index;
-            setState(() {
-              
-            });
+            setState(() {});
           },
-          child: RuleCard(
+          child: RoleCard(
             ruleContent: RuleModel.rules[index],
             isSelected: currentIndex == index,
           ),

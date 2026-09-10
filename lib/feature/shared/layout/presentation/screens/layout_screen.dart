@@ -1,6 +1,6 @@
 import 'package:doctor_hunt/core/theme/app_colors.dart';
-import 'package:doctor_hunt/feature/layout/data/models/nav_model.dart';
-import 'package:doctor_hunt/feature/layout/presentation/widgets/nav_bar_item.dart';
+import 'package:doctor_hunt/feature/shared/layout/data/models/nav_model.dart';
+import 'package:doctor_hunt/feature/shared/layout/presentation/widgets/nav_bar_item.dart';
 import 'package:flutter/material.dart';
 
 class LayoutScreen extends StatelessWidget {

@@ -1,12 +1,12 @@
-import 'package:doctor_hunt/feature/auth/presentation/screens/login_screen.dart';
-import 'package:doctor_hunt/feature/auth/presentation/screens/register_screen.dart';
-import 'package:doctor_hunt/feature/auth/presentation/screens/set_rule_screen.dart';
-import 'package:doctor_hunt/feature/book/presentation/screens/book_screen.dart';
-import 'package:doctor_hunt/feature/communicate/presentation/screens/communication_screen.dart';
-import 'package:doctor_hunt/feature/fav/presentation/screens/fav_screen.dart';
-import 'package:doctor_hunt/feature/home/presentation/screens/home_screen.dart';
-import 'package:doctor_hunt/feature/layout/presentation/screens/layout_screen.dart';
-import 'package:doctor_hunt/feature/onboarding/presentation/screens/onboarding_screen.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/screens/login_screen.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/screens/register_screen.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/screens/set_role_screen.dart';
+import 'package:doctor_hunt/feature/Patient/book/presentation/screens/book_screen.dart';
+import 'package:doctor_hunt/feature/Patient/communicate/presentation/screens/communication_screen.dart';
+import 'package:doctor_hunt/feature/Patient/fav/presentation/screens/fav_screen.dart';
+import 'package:doctor_hunt/feature/Patient/home/presentation/screens/patient_home_screen.dart';
+import 'package:doctor_hunt/feature/shared/layout/presentation/screens/layout_screen.dart';
+import 'package:doctor_hunt/feature/shared/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -40,14 +40,14 @@ class SetRuleRoute extends GoRouteData with $SetRuleRoute {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const SetRuleScreen();
+    return const SetRoleScreen();
   }
 
   @override
   Page<void> buildPage(BuildContext context, GoRouterState state) {
     return CustomTransitionPage<void>(
       key: state.pageKey,
-      child: const SetRuleScreen(),
+      child: const SetRoleScreen(),
       transitionDuration: const Duration(milliseconds: 300),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         return FadeTransition(opacity: animation, child: child);
@@ -122,7 +122,7 @@ class HomeRoute extends GoRouteData with $HomeRoute {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const HomeScreen();
+    return const PatientHomeScreen();
   }
 }
 

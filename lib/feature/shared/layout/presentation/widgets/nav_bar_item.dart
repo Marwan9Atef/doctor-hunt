@@ -1,5 +1,5 @@
 import 'package:doctor_hunt/core/theme/app_colors.dart';
-import 'package:doctor_hunt/feature/layout/data/models/nav_model.dart';
+import 'package:doctor_hunt/feature/shared/layout/data/models/nav_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';

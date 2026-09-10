@@ -1,10 +1,10 @@
-import 'package:doctor_hunt/feature/onboarding/data/models/onboarding_model.dart';
-import 'package:doctor_hunt/feature/onboarding/presentation/widgets/onboarding_body.dart';
-import 'package:doctor_hunt/feature/onboarding/presentation/widgets/onboarding_image.dart';
+import 'package:doctor_hunt/feature/shared/onboarding/data/models/onboarding_model.dart';
+import 'package:doctor_hunt/feature/shared/onboarding/presentation/widgets/onboarding_body.dart';
+import 'package:doctor_hunt/feature/shared/onboarding/presentation/widgets/onboarding_image.dart';
 import 'package:flutter/material.dart';
 
-class OnboardingView extends StatelessWidget {
-  const OnboardingView({
+class OnboardingViewItem extends StatelessWidget {
+  const OnboardingViewItem({
     super.key,
     required this.onboardingContent,
     required this.onNext,

@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/feature/home/presentation/widgets/live_card.dart';
+import 'package:doctor_hunt/feature/Patient/home/presentation/widgets/live_card.dart';
 import 'package:flutter/material.dart';
 
 class LiveCards extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:doctor_hunt/core/router/route_center.dart';
-import 'package:doctor_hunt/feature/onboarding/data/models/onboarding_model.dart';
-import 'package:doctor_hunt/feature/onboarding/presentation/view/onboarding_view.dart';
+import 'package:doctor_hunt/feature/shared/onboarding/data/models/onboarding_model.dart';
+import 'package:doctor_hunt/feature/shared/onboarding/presentation/widgets/onboarding_view_item.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -26,7 +26,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           });
         },
         controller: _pageController,
-        itemBuilder: (context, index) => OnboardingView(
+        itemBuilder: (context, index) => OnboardingViewItem(
           onNext: _onNext,
           onSkip: _onSkip,
           onboardingContent: OnboardingModel.onboardingContent[index],

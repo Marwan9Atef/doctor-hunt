@@ -1,5 +1,5 @@
 import 'package:doctor_hunt/core/theme/app_styles.dart';
-import 'package:doctor_hunt/feature/home/presentation/widgets/live_cards.dart';
+import 'package:doctor_hunt/feature/Patient/home/presentation/widgets/live_cards.dart';
 import 'package:flutter/material.dart';
 
 class LiveSection extends StatelessWidget {
