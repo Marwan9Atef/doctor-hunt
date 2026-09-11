@@ -29,12 +29,12 @@ class LayoutScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: List.generate(
-                NavItem.navItems.length,
+                NavItem.getNavItems(context).length,
                 (index) => NavBarItem(
-                  item: NavItem.navItems[index],
+                  item: NavItem.getNavItems(context)[index],
                   isActive: NavBarItem.isRouteActive(
                     context,
-                    NavItem.navItems[index].route,
+                    NavItem.getNavItems(context)[index].route,
                   ),
                 ),
               ),

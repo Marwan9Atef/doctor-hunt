@@ -17,9 +17,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final onboardingContent = OnboardingModel.getOnboardingContent(context);
+
     return Scaffold(
       body: PageView.builder(
-        itemCount: OnboardingModel.onboardingContent.length,
+        itemCount: onboardingContent.length,
         onPageChanged: (index) {
           setState(() {
             _currentPageIndex = index;
@@ -29,15 +31,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         itemBuilder: (context, index) => OnboardingViewItem(
           onNext: _onNext,
           onSkip: _onSkip,
-          onboardingContent: OnboardingModel.onboardingContent[index],
-          isLastPage: index == OnboardingModel.onboardingContent.length - 1,
+          onboardingContent: onboardingContent[index],
+          isLastPage: index == onboardingContent.length - 1,
         ),
       ),
     );
   }
 
   void _onNext() {
-    if (_currentPageIndex < OnboardingModel.onboardingContent.length - 1) {
+    final onboardingContent = OnboardingModel.getOnboardingContent(context);
+    if (_currentPageIndex < onboardingContent.length - 1) {
       _pageController.nextPage(
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,

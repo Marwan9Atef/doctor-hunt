@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/router/route_center.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/auth_text_nav.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/register/register_form_and_button.dart';
@@ -25,8 +26,8 @@ class RegisterScreen extends StatelessWidget {
                   onTap: () {
                     LoginRoute().go(context);
                   },
-                  prefText: 'Already have an account?',
-                  suffixText: 'Login',
+                  prefText: context.t.auth.register.hasAccount,
+                  suffixText: context.t.auth.register.login,
                 ),
               ],
             ),

@@ -9,8 +9,9 @@ class LiveCards extends StatelessWidget {
     return SizedBox(
       height: 170, 
       child: ListView.builder(
-        
+        padding: EdgeInsets.zero,
         scrollDirection: Axis.horizontal,
+          shrinkWrap: true, 
         itemBuilder: (context, index) => const LiveCard(),
         itemCount: 4,
      

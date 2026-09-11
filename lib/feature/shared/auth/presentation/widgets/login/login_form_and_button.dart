@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/router/route_center.dart';
 import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
@@ -15,25 +16,25 @@ class LoginFormAndButton extends StatelessWidget {
       children: [
         CustomTextFormField(
           textInputType: TextInputType.emailAddress,
-          hintText: "Email",
+          hintText: context.t.auth.login.email,
         ),
         const SizedBox(height: 18),
         CustomTextFormField(
           textInputType: TextInputType.visiblePassword,
-          hintText: "Password",
+          hintText: context.t.auth.login.password,
           isPassword: true,
         ),
         const SizedBox(height: 32),
         CustomElevatedButton(
-          text: "Login",
+          text: context.t.auth.login.loginButton,
           onPressed: () {
-            context.go(HomeRoute().location);
+            context.go(PatientHomeRoute().location);
           },
         ),
         const SizedBox(height: 18),
         InkWell(
           child: Text(
-            "Forgor password",
+            context.t.auth.login.forgotPassword,
             style: AppStyles.styleRegular14().copyWith(
               color: AppColors.colorMalachiteGreen,
             ),

@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
 import 'package:doctor_hunt/core/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
@@ -11,21 +12,24 @@ class RegisterFormAndButton extends StatelessWidget {
       children: [
         CustomTextFormField(
           textInputType: TextInputType.name,
-          hintText: "Name",
+          hintText: context.t.auth.register.name,
         ),
         const SizedBox(height: 18),
         CustomTextFormField(
           textInputType: TextInputType.emailAddress,
-          hintText: "Email",
+          hintText: context.t.auth.register.email,
         ),
         const SizedBox(height: 18),
         CustomTextFormField(
           textInputType: TextInputType.visiblePassword,
-          hintText: "Password",
+          hintText: context.t.auth.register.password,
           isPassword: true,
         ),
         const SizedBox(height: 32),
-        CustomElevatedButton(text: "Register", onPressed: () {}),
+        CustomElevatedButton(
+          text: context.t.auth.register.registerButton,
+          onPressed: () {},
+        ),
       ],
     );
   }

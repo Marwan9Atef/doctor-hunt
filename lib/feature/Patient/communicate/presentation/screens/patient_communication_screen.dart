@@ -2,8 +2,8 @@ import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
 
-class FavScreen extends StatelessWidget {
-  const FavScreen({super.key});
+class PatientCommunicationScreen extends StatelessWidget {
+  const PatientCommunicationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +12,10 @@ class FavScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.favorite, size: 80, color: AppColors.colorSlateGray),
+            Icon(Icons.chat_bubble, size: 80, color: AppColors.colorSlateGray),
             const SizedBox(height: 16),
             Text(
-              'Favorites Screen',
+              'Communication Screen',
               style: AppStyles.styleMedium24(color: AppColors.colorSlateGray),
             ),
           ],

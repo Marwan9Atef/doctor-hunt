@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
@@ -33,13 +34,18 @@ class OnboardingBody extends StatelessWidget {
           ),
           const SizedBox(height: 53),
           CustomElevatedButton(
-            text: isLastPage ? "Get Started" : "Next",
+            text: isLastPage
+                ? context.t.onboarding.getStarted
+                : context.t.onboarding.next,
             onPressed: onNext,
           ),
           const SizedBox(height: 14),
           InkWell(
             onTap: onSkip,
-            child: Text("Skip", style: AppStyles.styleRegular14()),
+            child: Text(
+              context.t.onboarding.skip,
+              style: AppStyles.styleRegular14(),
+            ),
           ),
         ],
       ),

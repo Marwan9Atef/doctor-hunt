@@ -1,4 +1,5 @@
 import 'package:doctor_hunt/core/asset/app_assets.dart';
+import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -11,15 +12,13 @@ class LiveCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(Assets.assetsImagesLive,
-      fit: BoxFit.cover,
-        ),
+        Image.asset(Assets.assetsImagesLive, fit: BoxFit.cover),
         Positioned(
           left: 0,
           right: 0,
           top: 0,
           bottom: 0,
-          child: Center(child: SvgPicture.asset(Assets.assetsImagesVideo,)),
+          child: Center(child: SvgPicture.asset(Assets.assetsImagesVideo)),
         ),
         Positioned(
           top: 20,
@@ -44,7 +43,7 @@ class LiveCard extends StatelessWidget {
                 ),
                 const SizedBox(width: 2),
                 Text(
-                  "Live",
+                  context.t.home.live,
                   style: AppStyles.styleRegular12().copyWith(
                     color: AppColors.colorWhite,
                   ),

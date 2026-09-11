@@ -1,4 +1,5 @@
 import 'package:doctor_hunt/core/asset/app_assets.dart';
+import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -11,18 +12,21 @@ class HomeHeader extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(20),
       decoration: ShapeDecoration(
-    gradient: LinearGradient(
-      begin: Alignment(-0.00, 0.05),
-      end: Alignment(0.93, 1.10),
-      colors: [AppColors.colorGradientGreenStart, AppColors.colorGradientGreenEnd],
-    ),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.only(
-        bottomLeft: Radius.circular(20),
-        bottomRight: Radius.circular(20),
+        gradient: LinearGradient(
+          begin: Alignment(-0.00, 0.05),
+          end: Alignment(0.93, 1.10),
+          colors: [
+            AppColors.colorGradientGreenStart,
+            AppColors.colorGradientGreenEnd,
+          ],
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(20),
+            bottomRight: Radius.circular(20),
+          ),
+        ),
       ),
-    ),
-  ),
 
       child: SafeArea(
         child: Row(
@@ -32,9 +36,20 @@ class HomeHeader extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Hi Marwan!",style: AppStyles.styleMedium18().copyWith(color: AppColors.colorWhite ,fontWeight: FontWeight.w300),),
+                Text(
+                  context.t.home.greeting.replaceFirst('{name}', 'Marwan'),
+                  style: AppStyles.styleMedium18().copyWith(
+                    color: AppColors.colorWhite,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ),
                 const SizedBox(height: 4),
-                Text("Find Your Doctor",style: AppStyles.styleBold25().copyWith(color: AppColors.colorWhite),),
+                Text(
+                  context.t.home.title,
+                  style: AppStyles.styleBold25().copyWith(
+                    color: AppColors.colorWhite,
+                  ),
+                ),
               ],
             ),
             ClipRRect(

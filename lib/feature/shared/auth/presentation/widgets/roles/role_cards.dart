@@ -3,7 +3,8 @@ import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/roles/role_
 import 'package:flutter/material.dart';
 
 class RoleCards extends StatefulWidget {
-  const RoleCards({super.key});
+  final List<RuleModel> rules;
+  const RoleCards({super.key, required this.rules});
 
   @override
   State<RoleCards> createState() => _RoleCardsState();
@@ -16,7 +17,7 @@ class _RoleCardsState extends State<RoleCards> {
   Widget build(BuildContext context) {
     return Column(
       children: List.generate(
-        RuleModel.rules.length,
+        widget.rules.length,
         (index) => GestureDetector(
           onTap: () {
             if (currentIndex == index) return;
@@ -24,7 +25,7 @@ class _RoleCardsState extends State<RoleCards> {
             setState(() {});
           },
           child: RoleCard(
-            ruleContent: RuleModel.rules[index],
+            ruleContent: widget.rules[index],
             isSelected: currentIndex == index,
           ),
         ),

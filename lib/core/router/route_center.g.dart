@@ -130,25 +130,25 @@ RouteBase get $layoutShellRoute => ShellRouteData.$route(
       path: '/home',
       name: 'home',
       hasOverriddenOnExit: false,
-      factory: $HomeRoute._fromState,
+      factory: $PatientHomeRoute._fromState,
     ),
     GoRouteData.$route(
       path: '/fav',
       name: 'fav',
       hasOverriddenOnExit: false,
-      factory: $FavRoute._fromState,
+      factory: $PatientFavRoute._fromState,
     ),
     GoRouteData.$route(
       path: '/book',
       name: 'book',
       hasOverriddenOnExit: false,
-      factory: $BookRoute._fromState,
+      factory: $PatientBookRoute._fromState,
     ),
     GoRouteData.$route(
       path: '/communicate',
       name: 'communicate',
       hasOverriddenOnExit: false,
-      factory: $CommunicateRoute._fromState,
+      factory: $PatientCommunicateRoute._fromState,
     ),
   ],
 );
@@ -158,8 +158,9 @@ extension $LayoutShellRouteExtension on LayoutShellRoute {
       const LayoutShellRoute();
 }
 
-mixin $HomeRoute on GoRouteData {
-  static HomeRoute _fromState(GoRouterState state) => const HomeRoute();
+mixin $PatientHomeRoute on GoRouteData {
+  static PatientHomeRoute _fromState(GoRouterState state) =>
+      const PatientHomeRoute();
 
   @override
   String get location => GoRouteData.$location('/home');
@@ -178,8 +179,9 @@ mixin $HomeRoute on GoRouteData {
   void replace(BuildContext context) => context.replace(location);
 }
 
-mixin $FavRoute on GoRouteData {
-  static FavRoute _fromState(GoRouterState state) => const FavRoute();
+mixin $PatientFavRoute on GoRouteData {
+  static PatientFavRoute _fromState(GoRouterState state) =>
+      const PatientFavRoute();
 
   @override
   String get location => GoRouteData.$location('/fav');
@@ -198,8 +200,9 @@ mixin $FavRoute on GoRouteData {
   void replace(BuildContext context) => context.replace(location);
 }
 
-mixin $BookRoute on GoRouteData {
-  static BookRoute _fromState(GoRouterState state) => const BookRoute();
+mixin $PatientBookRoute on GoRouteData {
+  static PatientBookRoute _fromState(GoRouterState state) =>
+      const PatientBookRoute();
 
   @override
   String get location => GoRouteData.$location('/book');
@@ -218,9 +221,9 @@ mixin $BookRoute on GoRouteData {
   void replace(BuildContext context) => context.replace(location);
 }
 
-mixin $CommunicateRoute on GoRouteData {
-  static CommunicateRoute _fromState(GoRouterState state) =>
-      const CommunicateRoute();
+mixin $PatientCommunicateRoute on GoRouteData {
+  static PatientCommunicateRoute _fromState(GoRouterState state) =>
+      const PatientCommunicateRoute();
 
   @override
   String get location => GoRouteData.$location('/communicate');

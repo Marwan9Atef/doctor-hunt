@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/router/route_center.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/auth_text_nav.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/login/login_form_and_button.dart';
@@ -25,8 +26,8 @@ class LoginScreen extends StatelessWidget {
                   onTap: () {
                     RegisterRoute().go(context);
                   },
-                  prefText: 'Don’t have an account?',
-                  suffixText: 'Join us',
+                  prefText: context.t.auth.login.noAccount,
+                  suffixText: context.t.auth.login.joinUs,
                 ),
               ],
             ),

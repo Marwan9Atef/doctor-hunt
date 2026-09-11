@@ -2,8 +2,8 @@ import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:flutter/material.dart';
 
-class BookScreen extends StatelessWidget {
-  const BookScreen({super.key});
+class PatientBookScreen extends StatelessWidget {
+  const PatientBookScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

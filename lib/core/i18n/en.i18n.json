@@ -1,0 +1,75 @@
+{
+  "app": {
+    "name": "Doctor Hunt"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to access your account and manage your healthcare experience",
+      "email": "Email",
+      "password": "Password",
+      "loginButton": "Login",
+      "forgotPassword": "Forgot password",
+      "noAccount": "Don't have an account?",
+      "joinUs": "Join us"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Sign up to get started with your account",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "registerButton": "Register",
+      "hasAccount": "Already have an account?",
+      "login": "Login"
+    },
+    "role": {
+      "title": "Choose your role",
+      "subtitle": "The selected role determines the experience and available features",
+      "continueButton": "Continue",
+      "patient": {
+        "title": "Patient",
+        "description": "Find doctors, book appointments, and manage your medical records."
+      },
+      "admin": {
+        "title": "Admin",
+        "description": "Manage doctors, appointments, users, and the platform."
+      }
+    }
+  },
+  "home": {
+    "greeting": "Hi {name}!",
+    "title": "Find Your Doctor",
+    "live": "Live"
+  },
+  "navigation": {
+    "home": "Home",
+    "favorites": "Fav",
+    "bookings": "Book",
+    "communicate": "Communicate"
+  },
+  "onboarding": {
+    "getStarted": "Get Started",
+    "next": "Next",
+    "skip": "Skip",
+    "screens": {
+      "screen1": {
+        "title": "Find Trusted Doctors",
+        "description": "Browse through our network of verified healthcare professionals and find the perfect doctor for your needs."
+      },
+      "screen2": {
+        "title": "Choose Best Doctors",
+        "description": "Compare doctors by specialty, ratings, and availability to make informed decisions about your healthcare."
+      },
+      "screen3": {
+        "title": "Easy Appointments",
+        "description": "Book appointments instantly, manage your schedule, and receive reminders for your upcoming visits."
+      }
+    }
+  },
+  "common": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Name"
+  }
+}

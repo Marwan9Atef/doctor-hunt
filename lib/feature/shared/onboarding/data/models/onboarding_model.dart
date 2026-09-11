@@ -1,4 +1,6 @@
 import 'package:doctor_hunt/core/asset/app_assets.dart';
+import 'package:doctor_hunt/core/i18n/strings.g.dart';
+import 'package:flutter/material.dart';
 
 class OnboardingModel {
   final String title;
@@ -9,24 +11,22 @@ class OnboardingModel {
     required this.imagePath,
     required this.title,
   });
-  static final List<OnboardingModel> onboardingContent = [
+
+  static List<OnboardingModel> getOnboardingContent(BuildContext context) => [
     OnboardingModel(
-      description:
-          "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
+      description: context.t.onboarding.screens.screen1.description,
       imagePath: Assets.assetsImagesOnboarding1,
-      title: "Find Trusted Doctors",
+      title: context.t.onboarding.screens.screen1.title,
     ),
     OnboardingModel(
-      description:
-          "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
+      description: context.t.onboarding.screens.screen2.description,
       imagePath: Assets.assetsImagesOnboarding2,
-      title: "Choose Best Doctors",
+      title: context.t.onboarding.screens.screen2.title,
     ),
     OnboardingModel(
-      description:
-          "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
+      description: context.t.onboarding.screens.screen3.description,
       imagePath: Assets.assetsImagesOnboarding3,
-      title: "Easy Appointments",
+      title: context.t.onboarding.screens.screen3.title,
     ),
   ];
 }

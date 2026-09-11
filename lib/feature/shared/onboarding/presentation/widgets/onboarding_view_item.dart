@@ -25,9 +25,8 @@ class OnboardingViewItem extends StatelessWidget {
         OnboardingBody(
           onNext: onNext,
           onSkip: onSkip,
-          description:
-              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.",
-          title: "Find Trusted Doctors",
+          description:onboardingContent.description,
+          title: onboardingContent.title,
           isLastPage: isLastPage,
         ),
       ],
