@@ -18,6 +18,10 @@ class Assets {
   /// assets/images/3.0x/splashscreen@3x.png
   static const String assetsImages30xSplashscreen3x = "assets/images/3.0x/splashscreen@3x.png";
 
+  /// Assets for assetsImagesActiveFav
+  /// assets/images/activeFav.svg
+  static const String assetsImagesActiveFav = "assets/images/activeFav.svg";
+
   /// Assets for assetsImagesAdmin
   /// assets/images/admin.svg
   static const String assetsImagesAdmin = "assets/images/admin.svg";
@@ -109,6 +113,10 @@ class Assets {
   /// Assets for assetsImagesStar
   /// assets/images/star.svg
   static const String assetsImagesStar = "assets/images/star.svg";
+
+  /// Assets for assetsImagesUnFav
+  /// assets/images/unFav.svg
+  static const String assetsImagesUnFav = "assets/images/unFav.svg";
 
   /// Assets for assetsImagesVideo
   /// assets/images/video.svg

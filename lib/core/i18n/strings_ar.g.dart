@@ -42,6 +42,7 @@ class TranslationsAr extends Translations with BaseTranslations<AppLocale, Trans
 	@override late final _Translations$app$ar app = _Translations$app$ar._(_root);
 	@override late final _Translations$auth$ar auth = _Translations$auth$ar._(_root);
 	@override late final _Translations$home$ar home = _Translations$home$ar._(_root);
+	@override late final _Translations$fav$ar fav = _Translations$fav$ar._(_root);
 	@override late final _Translations$navigation$ar navigation = _Translations$navigation$ar._(_root);
 	@override late final _Translations$onboarding$ar onboarding = _Translations$onboarding$ar._(_root);
 	@override late final _Translations$common$ar common = _Translations$common$ar._(_root);
@@ -83,6 +84,16 @@ class _Translations$home$ar extends Translations$home$en {
 	@override String get liveTitle => 'أطباء مباشر';
 	@override String get PopularTitle => 'اطباء مشهورين';
 	@override String get seeAll => 'عرض الكل';
+}
+
+// Path: fav
+class _Translations$fav$ar extends Translations$fav$en {
+	_Translations$fav$ar._(TranslationsAr root) : this._root = root, super.internal(root);
+
+	final TranslationsAr _root; // ignore: unused_field
+
+	// Translations
+	@override String get favTitle => 'دكتورك المفضل';
 }
 
 // Path: navigation
@@ -291,6 +302,7 @@ extension on TranslationsAr {
 			'home.liveTitle' => 'أطباء مباشر',
 			'home.PopularTitle' => 'اطباء مشهورين',
 			'home.seeAll' => 'عرض الكل',
+			'fav.favTitle' => 'دكتورك المفضل',
 			'navigation.home' => 'الرئيسية',
 			'navigation.favorites' => 'المفضلة',
 			'navigation.bookings' => 'الحجوزات',

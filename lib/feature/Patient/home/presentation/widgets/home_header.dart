@@ -2,7 +2,7 @@ import 'package:doctor_hunt/core/asset/app_assets.dart';
 import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
-import 'package:doctor_hunt/feature/Patient/home/presentation/widgets/home_search_bar.dart';
+import 'package:doctor_hunt/core/widgets/custom_search_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeHeader extends StatelessWidget {
@@ -64,7 +64,6 @@ class HomeHeader extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
-                
               ],
             ),
           ),
@@ -73,7 +72,7 @@ class HomeHeader extends StatelessWidget {
           offset: Offset(0, -25),
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
-            child: HomeSearchBar(),
+            child: CustomSearchBar(),
           ),
         ),
       ],
