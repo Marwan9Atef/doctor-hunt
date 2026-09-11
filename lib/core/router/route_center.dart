@@ -1,12 +1,12 @@
-import 'package:doctor_hunt/feature/auth/presentation/screens/login_screen.dart';
-import 'package:doctor_hunt/feature/auth/presentation/screens/register_screen.dart';
-import 'package:doctor_hunt/feature/auth/presentation/screens/set_rule_screen.dart';
-import 'package:doctor_hunt/feature/book/presentation/screens/book_screen.dart';
-import 'package:doctor_hunt/feature/communicate/presentation/screens/communication_screen.dart';
-import 'package:doctor_hunt/feature/fav/presentation/screens/fav_screen.dart';
-import 'package:doctor_hunt/feature/home/presentation/screens/home_screen.dart';
-import 'package:doctor_hunt/feature/layout/presentation/screens/layout_screen.dart';
-import 'package:doctor_hunt/feature/onboarding/presentation/screens/onboarding_screen.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/screens/login_screen.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/screens/register_screen.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/screens/set_role_screen.dart';
+import 'package:doctor_hunt/feature/Patient/book/presentation/screens/patient_book_screen.dart';
+import 'package:doctor_hunt/feature/Patient/communicate/presentation/screens/patient_communication_screen.dart';
+import 'package:doctor_hunt/feature/Patient/fav/presentation/screens/patient_fav_screen.dart';
+import 'package:doctor_hunt/feature/Patient/home/presentation/screens/patient_home_screen.dart';
+import 'package:doctor_hunt/feature/shared/layout/presentation/screens/layout_screen.dart';
+import 'package:doctor_hunt/feature/shared/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -40,14 +40,14 @@ class SetRuleRoute extends GoRouteData with $SetRuleRoute {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const SetRuleScreen();
+    return const SetRoleScreen();
   }
 
   @override
   Page<void> buildPage(BuildContext context, GoRouterState state) {
     return CustomTransitionPage<void>(
       key: state.pageKey,
-      child: const SetRuleScreen(),
+      child: const SetRoleScreen(),
       transitionDuration: const Duration(milliseconds: 300),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         return FadeTransition(opacity: animation, child: child);
@@ -102,10 +102,13 @@ class RegisterRoute extends GoRouteData with $RegisterRoute {
 
 @TypedShellRoute<LayoutShellRoute>(
   routes: <TypedRoute<RouteData>>[
-    TypedGoRoute<HomeRoute>(path: '/home', name: 'home'),
-    TypedGoRoute<FavRoute>(path: '/fav', name: 'fav'),
-    TypedGoRoute<BookRoute>(path: '/book', name: 'book'),
-    TypedGoRoute<CommunicateRoute>(path: '/communicate', name: 'communicate'),
+    TypedGoRoute<PatientHomeRoute>(path: '/home', name: 'home'),
+    TypedGoRoute<PatientFavRoute>(path: '/fav', name: 'fav'),
+    TypedGoRoute<PatientBookRoute>(path: '/book', name: 'book'),
+    TypedGoRoute<PatientCommunicateRoute>(
+      path: '/communicate',
+      name: 'communicate',
+    ),
   ],
 )
 class LayoutShellRoute extends ShellRouteData {
@@ -117,38 +120,39 @@ class LayoutShellRoute extends ShellRouteData {
   }
 }
 
-class HomeRoute extends GoRouteData with $HomeRoute {
-  const HomeRoute();
+class PatientHomeRoute extends GoRouteData with $PatientHomeRoute {
+  const PatientHomeRoute();
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const HomeScreen();
+    return const PatientHomeScreen();
   }
 }
 
-class FavRoute extends GoRouteData with $FavRoute {
-  const FavRoute();
+class PatientFavRoute extends GoRouteData with $PatientFavRoute {
+  const PatientFavRoute();
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const FavScreen();
+    return const PatientFavScreen();
   }
 }
 
-class BookRoute extends GoRouteData with $BookRoute {
-  const BookRoute();
+class PatientBookRoute extends GoRouteData with $PatientBookRoute {
+  const PatientBookRoute();
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const BookScreen();
+    return const PatientBookScreen();
   }
 }
 
-class CommunicateRoute extends GoRouteData with $CommunicateRoute {
-  const CommunicateRoute();
+class PatientCommunicateRoute extends GoRouteData
+    with $PatientCommunicateRoute {
+  const PatientCommunicateRoute();
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const CommunicationScreen();
+    return const PatientCommunicationScreen();
   }
 }
