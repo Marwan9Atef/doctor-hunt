@@ -11,7 +11,8 @@
       "loginButton": "تسجيل الدخول",
       "forgotPassword": "نسيت كلمة المرور",
       "noAccount": "ليس لديك حساب؟",
-      "joinUs": "انضم إلينا"
+      "joinUs": "انضم إلينا",
+      "google": "جوجل"
     },
     "register": {
       "title": "إنشاء حساب",
@@ -22,6 +23,11 @@
       "registerButton": "تسجيل",
       "hasAccount": "لديك حساب بالفعل؟",
       "login": "تسجيل الدخول"
+    },
+    "forget":{
+      "subtitle":"أدخل بريدك الإلكتروني لإجراء عملية التحقق",
+      "send":"إرسال"
+
     },
     "role": {
       "title": "اختر دورك",

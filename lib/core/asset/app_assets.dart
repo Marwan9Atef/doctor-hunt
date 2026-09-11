@@ -1,15 +1,14 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-
+  
   /// Assets for assetsImages2
   /// assets/images/2.0x
   static const String assetsImages2 = "assets/images/2.0x";
 
   /// Assets for assetsImages20xSplashscreen2x
   /// assets/images/2.0x/splashscreen@2x.png
-  static const String assetsImages20xSplashscreen2x =
-      "assets/images/2.0x/splashscreen@2x.png";
+  static const String assetsImages20xSplashscreen2x = "assets/images/2.0x/splashscreen@2x.png";
 
   /// Assets for assetsImages3
   /// assets/images/3.0x
@@ -17,8 +16,7 @@ class Assets {
 
   /// Assets for assetsImages30xSplashscreen3x
   /// assets/images/3.0x/splashscreen@3x.png
-  static const String assetsImages30xSplashscreen3x =
-      "assets/images/3.0x/splashscreen@3x.png";
+  static const String assetsImages30xSplashscreen3x = "assets/images/3.0x/splashscreen@3x.png";
 
   /// Assets for assetsImagesAdmin
   /// assets/images/admin.svg
@@ -31,6 +29,10 @@ class Assets {
   /// Assets for assetsImagesFav
   /// assets/images/fav.svg
   static const String assetsImagesFav = "assets/images/fav.svg";
+
+  /// Assets for assetsImagesGoogle
+  /// assets/images/google.svg
+  static const String assetsImagesGoogle = "assets/images/google.svg";
 
   /// Assets for assetsImagesHome
   /// assets/images/home.svg
@@ -62,13 +64,11 @@ class Assets {
 
   /// Assets for assetsImagesOnboardingLeftBack
   /// assets/images/onboardingLeftBack.png
-  static const String assetsImagesOnboardingLeftBack =
-      "assets/images/onboardingLeftBack.png";
+  static const String assetsImagesOnboardingLeftBack = "assets/images/onboardingLeftBack.png";
 
   /// Assets for assetsImagesOnboardingRightBack
   /// assets/images/onboardingRightBack.png
-  static const String assetsImagesOnboardingRightBack =
-      "assets/images/onboardingRightBack.png";
+  static const String assetsImagesOnboardingRightBack = "assets/images/onboardingRightBack.png";
 
   /// Assets for assetsImagesPatient
   /// assets/images/patient.svg
@@ -80,10 +80,10 @@ class Assets {
 
   /// Assets for assetsImagesSplashscreen
   /// assets/images/splashscreen.png
-  static const String assetsImagesSplashscreen =
-      "assets/images/splashscreen.png";
+  static const String assetsImagesSplashscreen = "assets/images/splashscreen.png";
 
   /// Assets for assetsImagesVideo
   /// assets/images/video.svg
   static const String assetsImagesVideo = "assets/images/video.svg";
 }
+

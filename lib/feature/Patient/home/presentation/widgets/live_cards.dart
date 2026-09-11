@@ -8,7 +8,8 @@ class LiveCards extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 170, 
-      child: ListView.builder(
+      child: ListView.separated(
+        separatorBuilder: (context, index) => const SizedBox(width: 8,),
         padding: EdgeInsets.zero,
         scrollDirection: Axis.horizontal,
           shrinkWrap: true, 

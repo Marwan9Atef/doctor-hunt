@@ -66,6 +66,7 @@ class _Translations$auth$ar extends Translations$auth$en {
 	// Translations
 	@override late final _Translations$auth$login$ar login = _Translations$auth$login$ar._(_root);
 	@override late final _Translations$auth$register$ar register = _Translations$auth$register$ar._(_root);
+	@override late final _Translations$auth$forget$ar forget = _Translations$auth$forget$ar._(_root);
 	@override late final _Translations$auth$role$ar role = _Translations$auth$role$ar._(_root);
 }
 
@@ -134,6 +135,7 @@ class _Translations$auth$login$ar extends Translations$auth$login$en {
 	@override String get forgotPassword => 'نسيت كلمة المرور';
 	@override String get noAccount => 'ليس لديك حساب؟';
 	@override String get joinUs => 'انضم إلينا';
+	@override String get google => 'جوجل';
 }
 
 // Path: auth.register
@@ -151,6 +153,17 @@ class _Translations$auth$register$ar extends Translations$auth$register$en {
 	@override String get registerButton => 'تسجيل';
 	@override String get hasAccount => 'لديك حساب بالفعل؟';
 	@override String get login => 'تسجيل الدخول';
+}
+
+// Path: auth.forget
+class _Translations$auth$forget$ar extends Translations$auth$forget$en {
+	_Translations$auth$forget$ar._(TranslationsAr root) : this._root = root, super.internal(root);
+
+	final TranslationsAr _root; // ignore: unused_field
+
+	// Translations
+	@override String get subtitle => 'أدخل بريدك الإلكتروني لإجراء عملية التحقق';
+	@override String get send => 'إرسال';
 }
 
 // Path: auth.role
@@ -251,6 +264,7 @@ extension on TranslationsAr {
 			'auth.login.forgotPassword' => 'نسيت كلمة المرور',
 			'auth.login.noAccount' => 'ليس لديك حساب؟',
 			'auth.login.joinUs' => 'انضم إلينا',
+			'auth.login.google' => 'جوجل',
 			'auth.register.title' => 'إنشاء حساب',
 			'auth.register.subtitle' => 'سجل للبدء مع حسابك',
 			'auth.register.name' => 'الاسم',
@@ -259,6 +273,8 @@ extension on TranslationsAr {
 			'auth.register.registerButton' => 'تسجيل',
 			'auth.register.hasAccount' => 'لديك حساب بالفعل؟',
 			'auth.register.login' => 'تسجيل الدخول',
+			'auth.forget.subtitle' => 'أدخل بريدك الإلكتروني لإجراء عملية التحقق',
+			'auth.forget.send' => 'إرسال',
 			'auth.role.title' => 'اختر دورك',
 			'auth.role.subtitle' => 'الدور المحدد يحدد التجربة والميزات المتاحة',
 			'auth.role.continueButton' => 'متابعة',

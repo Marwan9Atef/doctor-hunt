@@ -70,6 +70,7 @@ class Translations$auth$en {
 	// Translations
 	late final Translations$auth$login$en login = Translations$auth$login$en.internal(_root);
 	late final Translations$auth$register$en register = Translations$auth$register$en.internal(_root);
+	late final Translations$auth$forget$en forget = Translations$auth$forget$en.internal(_root);
 	late final Translations$auth$role$en role = Translations$auth$role$en.internal(_root);
 }
 
@@ -181,6 +182,9 @@ class Translations$auth$login$en {
 
 	/// en: 'Join us'
 	String get joinUs => 'Join us';
+
+	/// en: 'Google'
+	String get google => 'Google';
 }
 
 // Path: auth.register
@@ -214,6 +218,21 @@ class Translations$auth$register$en {
 
 	/// en: 'Login'
 	String get login => 'Login';
+}
+
+// Path: auth.forget
+class Translations$auth$forget$en {
+	Translations$auth$forget$en.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Enter your email for verification'
+	String get subtitle => 'Enter your email for verification';
+
+	/// en: 'Send'
+	String get send => 'Send';
 }
 
 // Path: auth.role
@@ -341,6 +360,7 @@ extension on Translations {
 			'auth.login.forgotPassword' => 'Forgot password',
 			'auth.login.noAccount' => 'Don\'t have an account?',
 			'auth.login.joinUs' => 'Join us',
+			'auth.login.google' => 'Google',
 			'auth.register.title' => 'Create Account',
 			'auth.register.subtitle' => 'Sign up to get started with your account',
 			'auth.register.name' => 'Name',
@@ -349,6 +369,8 @@ extension on Translations {
 			'auth.register.registerButton' => 'Register',
 			'auth.register.hasAccount' => 'Already have an account?',
 			'auth.register.login' => 'Login',
+			'auth.forget.subtitle' => 'Enter your email for verification',
+			'auth.forget.send' => 'Send',
 			'auth.role.title' => 'Choose your role',
 			'auth.role.subtitle' => 'The selected role determines the experience and available features',
 			'auth.role.continueButton' => 'Continue',

@@ -11,7 +11,8 @@
       "loginButton": "Login",
       "forgotPassword": "Forgot password",
       "noAccount": "Don't have an account?",
-      "joinUs": "Join us"
+      "joinUs": "Join us",
+      "google": "Google"
     },
     "register": {
       "title": "Create Account",
@@ -22,6 +23,11 @@
       "registerButton": "Register",
       "hasAccount": "Already have an account?",
       "login": "Login"
+    },
+    "forget":{
+      "subtitle":"Enter your email for verification",
+      "send":"Send"
+
     },
     "role": {
       "title": "Choose your role",

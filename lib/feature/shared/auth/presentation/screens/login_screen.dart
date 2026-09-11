@@ -1,6 +1,7 @@
 import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/router/route_center.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/auth_text_nav.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/google_button.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/login/login_form_and_button.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/login/login_head.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,9 @@ class LoginScreen extends StatelessWidget {
                 const LoginHead(),
                 const SizedBox(height: 32),
                 const LoginFormAndButton(),
-                const SizedBox(height: 18),
+                const SizedBox(height: 32),
+                const GoogleButton(),
+                const SizedBox(height: 32),
                 AuthTextNav(
                   onTap: () {
                     RegisterRoute().go(context);
