@@ -44,6 +44,7 @@ class TranslationsAr extends Translations with BaseTranslations<AppLocale, Trans
 	@override late final _Translations$home$ar home = _Translations$home$ar._(_root);
 	@override late final _Translations$fav$ar fav = _Translations$fav$ar._(_root);
 	@override late final _Translations$book$ar book = _Translations$book$ar._(_root);
+	@override late final _Translations$doctorDetails$ar doctorDetails = _Translations$doctorDetails$ar._(_root);
 	@override late final _Translations$navigation$ar navigation = _Translations$navigation$ar._(_root);
 	@override late final _Translations$onboarding$ar onboarding = _Translations$onboarding$ar._(_root);
 	@override late final _Translations$common$ar common = _Translations$common$ar._(_root);
@@ -106,6 +107,20 @@ class _Translations$book$ar extends Translations$book$en {
 	// Translations
 	@override String get bookTitle => 'اعثر على أطباء';
 	@override String get bookButton => 'احجز الآن';
+}
+
+// Path: doctorDetails
+class _Translations$doctorDetails$ar extends Translations$doctorDetails$en {
+	_Translations$doctorDetails$ar._(TranslationsAr root) : this._root = root, super.internal(root);
+
+	final TranslationsAr _root; // ignore: unused_field
+
+	// Translations
+	@override String get doctorDetailsTitle => 'تفاصيل عن الدكتور';
+	@override String get runing => 'جارية';
+	@override String get ongoing => 'مستمرة';
+	@override String get patient => 'مرضى';
+	@override String get service => 'خدمات';
 }
 
 // Path: navigation
@@ -317,6 +332,11 @@ extension on TranslationsAr {
 			'fav.favTitle' => 'دكتورك المفضل',
 			'book.bookTitle' => 'اعثر على أطباء',
 			'book.bookButton' => 'احجز الآن',
+			'doctorDetails.doctorDetailsTitle' => 'تفاصيل عن الدكتور',
+			'doctorDetails.runing' => 'جارية',
+			'doctorDetails.ongoing' => 'مستمرة',
+			'doctorDetails.patient' => 'مرضى',
+			'doctorDetails.service' => 'خدمات',
 			'navigation.home' => 'الرئيسية',
 			'navigation.favorites' => 'المفضلة',
 			'navigation.bookings' => 'الحجوزات',

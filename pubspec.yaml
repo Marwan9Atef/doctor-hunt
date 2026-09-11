@@ -38,6 +38,8 @@ dependencies:
   flutter_svg: ^2.3.0
   slang: ^4.19.1
   slang_flutter: ^4.19.0
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
   flutter_localizations:
     sdk: flutter
  

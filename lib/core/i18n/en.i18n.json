@@ -58,6 +58,14 @@
     "bookTitle":"Find Doctors",
     "bookButton":"Book Now"
   },
+  "doctorDetails":{
+    "doctorDetailsTitle":"Doctor Details",
+    "runing":"Runing",
+    "ongoing":"Ongoing",
+    "patient":"Patient",
+    "service":"Service"
+
+  },
   "navigation": {
     "home": "Home",
     "favorites": "Fav",

@@ -46,6 +46,7 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 	late final Translations$home$en home = Translations$home$en.internal(_root);
 	late final Translations$fav$en fav = Translations$fav$en.internal(_root);
 	late final Translations$book$en book = Translations$book$en.internal(_root);
+	late final Translations$doctorDetails$en doctorDetails = Translations$doctorDetails$en.internal(_root);
 	late final Translations$navigation$en navigation = Translations$navigation$en.internal(_root);
 	late final Translations$onboarding$en onboarding = Translations$onboarding$en.internal(_root);
 	late final Translations$common$en common = Translations$common$en.internal(_root);
@@ -128,6 +129,30 @@ class Translations$book$en {
 
 	/// en: 'Book Now'
 	String get bookButton => 'Book Now';
+}
+
+// Path: doctorDetails
+class Translations$doctorDetails$en {
+	Translations$doctorDetails$en.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Doctor Details'
+	String get doctorDetailsTitle => 'Doctor Details';
+
+	/// en: 'Runing'
+	String get runing => 'Runing';
+
+	/// en: 'Ongoing'
+	String get ongoing => 'Ongoing';
+
+	/// en: 'Patient'
+	String get patient => 'Patient';
+
+	/// en: 'Service'
+	String get service => 'Service';
 }
 
 // Path: navigation
@@ -425,6 +450,11 @@ extension on Translations {
 			'fav.favTitle' => 'Favourite Doctors',
 			'book.bookTitle' => 'Find Doctors',
 			'book.bookButton' => 'Book Now',
+			'doctorDetails.doctorDetailsTitle' => 'Doctor Details',
+			'doctorDetails.runing' => 'Runing',
+			'doctorDetails.ongoing' => 'Ongoing',
+			'doctorDetails.patient' => 'Patient',
+			'doctorDetails.service' => 'Service',
 			'navigation.home' => 'Home',
 			'navigation.favorites' => 'Fav',
 			'navigation.bookings' => 'Book',

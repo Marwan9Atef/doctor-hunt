@@ -58,6 +58,14 @@
     "bookTitle":"اعثر على أطباء",
     "bookButton":"احجز الآن"
   },
+    "doctorDetails":{
+    "doctorDetailsTitle":"تفاصيل عن الدكتور",
+    "runing":"جارية",
+    "ongoing":"مستمرة",
+    "patient":"مرضى",
+    "service":"خدمات"
+
+  },
   "navigation": {
     "home": "الرئيسية",
     "favorites": "المفضلة",

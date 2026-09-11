@@ -1,8 +1,8 @@
 import 'package:doctor_hunt/core/asset/app_assets.dart';
 import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
+import 'package:doctor_hunt/feature/Patient/book/presentation/widgets/star_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class PopularDoctorCard extends StatelessWidget {
   final String doctorName;
@@ -57,7 +57,7 @@ class PopularDoctorCard extends StatelessWidget {
                 Row(
                   children: List.generate(
                     5,
-                    (index) => _StarWidget(filled: index < rating),
+                    (index) => StarWidget(filled: index < rating),
                   ),
                 ),
               ],
@@ -69,21 +69,4 @@ class PopularDoctorCard extends StatelessWidget {
   }
 }
 
-class _StarWidget extends StatelessWidget {
-  final bool filled;
 
-  const _StarWidget({required this.filled});
-
-  @override
-  Widget build(BuildContext context) {
-    return SvgPicture.asset(
-      Assets.assetsImagesStar,
-      width: 16,
-      height: 16,
-      colorFilter: ColorFilter.mode(
-        filled ? const Color(0xFFFFC107) : AppColors.colorSlateGray,
-        BlendMode.srcIn,
-      ),
-    );
-  }
-}

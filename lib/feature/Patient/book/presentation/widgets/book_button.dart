@@ -17,7 +17,7 @@ class BookButton extends StatelessWidget {
           width: 112,
         height: 45,
         decoration: ShapeDecoration(
-      color: AppColors.colorGradientGreenEnd,
+      color: AppColors.colorGradientGreenStart,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
         ),
         child: Center(child: Text(context.t.book.bookButton,style: AppStyles.styleRegular12().copyWith(color: AppColors.colorWhite),)),
