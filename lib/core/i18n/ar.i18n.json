@@ -46,7 +46,10 @@
   "home": {
     "greeting": "مرحباً {name}!",
     "title": "ابحث عن طبيبك",
-    "live": "مباشر"
+    "live": "مباشر",
+     "liveTitle":"أطباء مباشر",
+     "PopularTitle":"اطباء مشهورين",
+     "seeAll":"عرض الكل"
   },
   "navigation": {
     "home": "الرئيسية",

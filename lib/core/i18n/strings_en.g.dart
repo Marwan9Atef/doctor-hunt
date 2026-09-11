@@ -90,6 +90,15 @@ class Translations$home$en {
 
 	/// en: 'Live'
 	String get live => 'Live';
+
+	/// en: 'Live Doctors'
+	String get liveTitle => 'Live Doctors';
+
+	/// en: 'Popular Doctor'
+	String get PopularTitle => 'Popular Doctor';
+
+	/// en: 'See all'
+	String get seeAll => 'See all';
 }
 
 // Path: navigation
@@ -381,6 +390,9 @@ extension on Translations {
 			'home.greeting' => 'Hi {name}!',
 			'home.title' => 'Find Your Doctor',
 			'home.live' => 'Live',
+			'home.liveTitle' => 'Live Doctors',
+			'home.PopularTitle' => 'Popular Doctor',
+			'home.seeAll' => 'See all',
 			'navigation.home' => 'Home',
 			'navigation.favorites' => 'Fav',
 			'navigation.bookings' => 'Book',

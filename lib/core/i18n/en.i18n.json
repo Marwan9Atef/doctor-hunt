@@ -46,7 +46,10 @@
   "home": {
     "greeting": "Hi {name}!",
     "title": "Find Your Doctor",
-    "live": "Live"
+    "live": "Live",
+    "liveTitle":"Live Doctors",
+    "PopularTitle":"Popular Doctor",
+    "seeAll":"See all"
   },
   "navigation": {
     "home": "Home",

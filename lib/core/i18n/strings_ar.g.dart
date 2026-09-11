@@ -80,6 +80,9 @@ class _Translations$home$ar extends Translations$home$en {
 	@override String get greeting => 'مرحباً {name}!';
 	@override String get title => 'ابحث عن طبيبك';
 	@override String get live => 'مباشر';
+	@override String get liveTitle => 'أطباء مباشر';
+	@override String get PopularTitle => 'اطباء مشهورين';
+	@override String get seeAll => 'عرض الكل';
 }
 
 // Path: navigation
@@ -285,6 +288,9 @@ extension on TranslationsAr {
 			'home.greeting' => 'مرحباً {name}!',
 			'home.title' => 'ابحث عن طبيبك',
 			'home.live' => 'مباشر',
+			'home.liveTitle' => 'أطباء مباشر',
+			'home.PopularTitle' => 'اطباء مشهورين',
+			'home.seeAll' => 'عرض الكل',
 			'navigation.home' => 'الرئيسية',
 			'navigation.favorites' => 'المفضلة',
 			'navigation.bookings' => 'الحجوزات',

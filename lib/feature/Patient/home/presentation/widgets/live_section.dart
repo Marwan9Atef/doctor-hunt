@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:doctor_hunt/feature/Patient/home/presentation/widgets/live_cards.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class LiveSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Live Doctors",style: AppStyles.styleMedium18(),),
+          Text(context.t.home.liveTitle, style: AppStyles.styleMedium18()),
           const LiveCards()
           
       

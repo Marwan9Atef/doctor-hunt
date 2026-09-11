@@ -21,8 +21,8 @@ class LiveCard extends StatelessWidget {
           child: Center(child: SvgPicture.asset(Assets.assetsImagesVideo)),
         ),
         Positioned(
-          top: 20,
-          right: 25,
+          top: 5,
+          right: 10,
           child: Container(
             padding: EdgeInsets.all(7),
             decoration: ShapeDecoration(
