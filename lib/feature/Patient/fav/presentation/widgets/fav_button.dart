@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 
 class FavButton extends StatefulWidget {
   const FavButton({super.key});
+  
 
   @override
   State<FavButton> createState() => _FavButtonState();

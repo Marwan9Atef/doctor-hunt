@@ -45,6 +45,7 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 	late final Translations$auth$en auth = Translations$auth$en.internal(_root);
 	late final Translations$home$en home = Translations$home$en.internal(_root);
 	late final Translations$fav$en fav = Translations$fav$en.internal(_root);
+	late final Translations$book$en book = Translations$book$en.internal(_root);
 	late final Translations$navigation$en navigation = Translations$navigation$en.internal(_root);
 	late final Translations$onboarding$en onboarding = Translations$onboarding$en.internal(_root);
 	late final Translations$common$en common = Translations$common$en.internal(_root);
@@ -112,6 +113,21 @@ class Translations$fav$en {
 
 	/// en: 'Favourite Doctors'
 	String get favTitle => 'Favourite Doctors';
+}
+
+// Path: book
+class Translations$book$en {
+	Translations$book$en.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Find Doctors'
+	String get bookTitle => 'Find Doctors';
+
+	/// en: 'Book Now'
+	String get bookButton => 'Book Now';
 }
 
 // Path: navigation
@@ -407,6 +423,8 @@ extension on Translations {
 			'home.PopularTitle' => 'Popular Doctor',
 			'home.seeAll' => 'See all',
 			'fav.favTitle' => 'Favourite Doctors',
+			'book.bookTitle' => 'Find Doctors',
+			'book.bookButton' => 'Book Now',
 			'navigation.home' => 'Home',
 			'navigation.favorites' => 'Fav',
 			'navigation.bookings' => 'Book',

@@ -54,6 +54,10 @@
     "fav":{
     "favTitle":"دكتورك المفضل"
   },
+    "book":{
+    "bookTitle":"اعثر على أطباء",
+    "bookButton":"احجز الآن"
+  },
   "navigation": {
     "home": "الرئيسية",
     "favorites": "المفضلة",
