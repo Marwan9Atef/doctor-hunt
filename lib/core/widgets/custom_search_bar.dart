@@ -3,14 +3,14 @@ import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class HomeSearchBar extends StatefulWidget {
-  const HomeSearchBar({super.key});
+class CustomSearchBar extends StatefulWidget {
+  const CustomSearchBar({super.key});
 
   @override
-  State<HomeSearchBar> createState() => _HomeSearchBarState();
+  State<CustomSearchBar> createState() => _CustomSearchBarState();
 }
 
-class _HomeSearchBarState extends State<HomeSearchBar> {
+class _CustomSearchBarState extends State<CustomSearchBar> {
   final TextEditingController _controller = TextEditingController();
   bool _hasText = false;
 
@@ -37,6 +37,7 @@ class _HomeSearchBarState extends State<HomeSearchBar> {
   @override
   Widget build(BuildContext context) {
     return TextField(
+        onTapOutside: (_) => FocusManager.instance.primaryFocus?.unfocus(),
       controller: _controller,
       style: const TextStyle(
         color: AppColors.colorDarkCharcoal,
@@ -86,21 +87,21 @@ class _HomeSearchBarState extends State<HomeSearchBar> {
               )
             : null,
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(6),
           borderSide: BorderSide(
             color: AppColors.colorSlateGray.withValues(alpha: 0.3),
             width: 1,
           ),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(6),
           borderSide: BorderSide(
             color: AppColors.colorSlateGray.withValues(alpha: 0.3),
             width: 1,
           ),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(6),
           borderSide: const BorderSide(
             color: AppColors.colorMalachiteGreen,
             width: 2,

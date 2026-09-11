@@ -51,6 +51,9 @@
     "PopularTitle":"Popular Doctor",
     "seeAll":"See all"
   },
+  "fav":{
+    "favTitle":"Favourite Doctors"
+  },
   "navigation": {
     "home": "Home",
     "favorites": "Fav",
