@@ -4,6 +4,7 @@ import 'package:doctor_hunt/feature/admin/setting/presnetation/screens/settings_
 import 'package:doctor_hunt/feature/shared/auth/presentation/screens/login_screen.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/screens/register_screen.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/screens/set_role_screen.dart';
+import 'package:doctor_hunt/feature/Patient/book/presentation/screens/doctor_details_screen.dart';
 import 'package:doctor_hunt/feature/Patient/book/presentation/screens/patient_book_screen.dart';
 import 'package:doctor_hunt/feature/Patient/communicate/presentation/screens/patient_communication_screen.dart';
 import 'package:doctor_hunt/feature/Patient/fav/presentation/screens/patient_fav_screen.dart';
@@ -95,6 +96,53 @@ class RegisterRoute extends GoRouteData with $RegisterRoute {
     return CustomTransitionPage<void>(
       key: state.pageKey,
       child: const RegisterScreen(),
+      transitionDuration: const Duration(milliseconds: 300),
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        return FadeTransition(opacity: animation, child: child);
+      },
+    );
+  }
+}
+
+@TypedGoRoute<DoctorDetailsRoute>(
+  path: '/doctor-details',
+  name: 'doctor-details',
+)
+class DoctorDetailsRoute extends GoRouteData with $DoctorDetailsRoute {
+  const DoctorDetailsRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const DoctorDetailsScreen();
+  }
+
+  @override
+  Page<void> buildPage(BuildContext context, GoRouterState state) {
+    return CustomTransitionPage<void>(
+      key: state.pageKey,
+      child: const DoctorDetailsScreen(),
+      transitionDuration: const Duration(milliseconds: 300),
+      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+        return FadeTransition(opacity: animation, child: child);
+      },
+    );
+  }
+}
+
+@TypedGoRoute<AppointmentRoute>(path: '/appointment', name: 'appointment')
+class AppointmentRoute extends GoRouteData with $AppointmentRoute {
+  const AppointmentRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const AppointmentScreen();
+  }
+
+  @override
+  Page<void> buildPage(BuildContext context, GoRouterState state) {
+    return CustomTransitionPage<void>(
+      key: state.pageKey,
+      child: const AppointmentScreen(),
       transitionDuration: const Duration(milliseconds: 300),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         return FadeTransition(opacity: animation, child: child);

@@ -59,6 +59,20 @@
     "fav":{
     "favTitle":"دكتورك المفضل"
   },
+    "book":{
+    "bookTitle":"اعثر على أطباء",
+    "bookButton":"احجز الآن",
+     "appointmentTitle":"الحجوزات",
+     "availableTime":"الوقت المتاح"
+  },
+    "doctorDetails":{
+    "doctorDetailsTitle":"تفاصيل عن الدكتور",
+    "runing":"جارية",
+    "ongoing":"مستمرة",
+    "patient":"مرضى",
+    "service":"خدمات"
+
+  },
   "navigation": {
     "home": "الرئيسية",
     "favorites": "المفضلة",

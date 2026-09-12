@@ -45,6 +45,8 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 	late final Translations$auth$en auth = Translations$auth$en.internal(_root);
 	late final Translations$home$en home = Translations$home$en.internal(_root);
 	late final Translations$fav$en fav = Translations$fav$en.internal(_root);
+	late final Translations$book$en book = Translations$book$en.internal(_root);
+	late final Translations$doctorDetails$en doctorDetails = Translations$doctorDetails$en.internal(_root);
 	late final Translations$navigation$en navigation = Translations$navigation$en.internal(_root);
 	late final Translations$onboarding$en onboarding = Translations$onboarding$en.internal(_root);
 	late final Translations$common$en common = Translations$common$en.internal(_root);
@@ -117,6 +119,51 @@ class Translations$fav$en {
 
 	/// en: 'Favourite Doctors'
 	String get favTitle => 'Favourite Doctors';
+}
+
+// Path: book
+class Translations$book$en {
+	Translations$book$en.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Find Doctors'
+	String get bookTitle => 'Find Doctors';
+
+	/// en: 'Book Now'
+	String get bookButton => 'Book Now';
+
+	/// en: 'Appointment'
+	String get appointmentTitle => 'Appointment';
+
+	/// en: 'Available Time'
+	String get availableTime => 'Available Time';
+}
+
+// Path: doctorDetails
+class Translations$doctorDetails$en {
+	Translations$doctorDetails$en.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Doctor Details'
+	String get doctorDetailsTitle => 'Doctor Details';
+
+	/// en: 'Runing'
+	String get runing => 'Runing';
+
+	/// en: 'Ongoing'
+	String get ongoing => 'Ongoing';
+
+	/// en: 'Patient'
+	String get patient => 'Patient';
+
+	/// en: 'Service'
+	String get service => 'Service';
 }
 
 // Path: navigation
@@ -433,6 +480,15 @@ extension on Translations {
 			'home.adminInfo.totalDoctors' => 'Total Doctors',
 			'home.adminInfo.activeDoctors' => 'Active Doctors',
 			'fav.favTitle' => 'Favourite Doctors',
+			'book.bookTitle' => 'Find Doctors',
+			'book.bookButton' => 'Book Now',
+			'book.appointmentTitle' => 'Appointment',
+			'book.availableTime' => 'Available Time',
+			'doctorDetails.doctorDetailsTitle' => 'Doctor Details',
+			'doctorDetails.runing' => 'Runing',
+			'doctorDetails.ongoing' => 'Ongoing',
+			'doctorDetails.patient' => 'Patient',
+			'doctorDetails.service' => 'Service',
 			'navigation.home' => 'Home',
 			'navigation.favorites' => 'Fav',
 			'navigation.bookings' => 'Book',

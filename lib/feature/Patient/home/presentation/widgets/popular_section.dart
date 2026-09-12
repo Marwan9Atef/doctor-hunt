@@ -1,4 +1,5 @@
 import 'package:doctor_hunt/core/i18n/strings.g.dart';
+import 'package:doctor_hunt/core/router/route_center.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:doctor_hunt/feature/Patient/home/presentation/widgets/popular_doctor_list.dart';
 import 'package:flutter/material.dart';
@@ -14,16 +15,25 @@ class PopularSection extends StatelessWidget {
         children: [
           Row(
             children: [
-              Text(context.t.home.PopularTitle,style: AppStyles.styleMedium18(),),
-            const  Spacer(),
-            Text(context.t.home.seeAll,style: AppStyles.styleLight14(),)
+              Text(
+                context.t.home.PopularTitle,
+                style: AppStyles.styleMedium18(),
+              ),
+              const Spacer(),
+              GestureDetector(
+                onTap: () {
+                  PatientBookRoute().push(context);
+                },
+                child: Text(
+                  context.t.home.seeAll,
+                  style: AppStyles.styleLight14(),
+                ),
+              ),
             ],
           ),
-          const SizedBox(height: 22,),
+          const SizedBox(height: 22),
           const PopularDoctorList(),
-          const SizedBox(height: 30,),
-          
-          
+          const SizedBox(height: 30),
         ],
       ),
     );
