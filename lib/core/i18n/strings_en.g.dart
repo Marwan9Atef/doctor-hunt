@@ -262,6 +262,9 @@ class Translations$auth$login$en {
 
 	/// en: 'Google'
 	String get google => 'Google';
+
+	/// en: 'Login successful'
+	String get successMessage => 'Login successful';
 }
 
 // Path: auth.register
@@ -295,6 +298,9 @@ class Translations$auth$register$en {
 
 	/// en: 'Login'
 	String get login => 'Login';
+
+	/// en: 'Registration successful'
+	String get successMessage => 'Registration successful';
 }
 
 // Path: auth.forget
@@ -453,6 +459,7 @@ extension on Translations {
 			'auth.login.noAccount' => 'Don\'t have an account?',
 			'auth.login.joinUs' => 'Join us',
 			'auth.login.google' => 'Google',
+			'auth.login.successMessage' => 'Login successful',
 			'auth.register.title' => 'Create Account',
 			'auth.register.subtitle' => 'Sign up to get started with your account',
 			'auth.register.name' => 'Name',
@@ -461,6 +468,7 @@ extension on Translations {
 			'auth.register.registerButton' => 'Register',
 			'auth.register.hasAccount' => 'Already have an account?',
 			'auth.register.login' => 'Login',
+			'auth.register.successMessage' => 'Registration successful',
 			'auth.forget.subtitle' => 'Enter your email for verification',
 			'auth.forget.send' => 'Send',
 			'auth.role.title' => 'Choose your role',

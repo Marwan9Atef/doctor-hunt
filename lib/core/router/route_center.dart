@@ -11,7 +11,11 @@ import 'package:doctor_hunt/feature/Patient/fav/presentation/screens/patient_fav
 import 'package:doctor_hunt/feature/Patient/home/presentation/screens/patient_home_screen.dart';
 import 'package:doctor_hunt/feature/shared/layout/presentation/screens/layout_screen.dart';
 import 'package:doctor_hunt/feature/shared/onboarding/presentation/screens/onboarding_screen.dart';
+import 'package:doctor_hunt/core/di/service_locator.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/cubit/login_cubit.dart';
+import 'package:doctor_hunt/feature/shared/auth/presentation/cubit/register_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 part 'route_center.g.dart';
@@ -66,14 +70,20 @@ class LoginRoute extends GoRouteData with $LoginRoute {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const LoginScreen();
+    return BlocProvider(
+      create: (context) => serviceLocator<LoginCubit>(),
+      child: const LoginScreen(),
+    );
   }
 
   @override
   Page<void> buildPage(BuildContext context, GoRouterState state) {
     return CustomTransitionPage<void>(
       key: state.pageKey,
-      child: const LoginScreen(),
+      child: BlocProvider(
+        create: (context) => serviceLocator<LoginCubit>(),
+        child: const LoginScreen(),
+      ),
       transitionDuration: const Duration(milliseconds: 300),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         return FadeTransition(opacity: animation, child: child);
@@ -88,14 +98,20 @@ class RegisterRoute extends GoRouteData with $RegisterRoute {
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return const RegisterScreen();
+    return BlocProvider(
+      create: (context) => serviceLocator<RegisterCubit>(),
+      child: const RegisterScreen(),
+    );
   }
 
   @override
   Page<void> buildPage(BuildContext context, GoRouterState state) {
     return CustomTransitionPage<void>(
       key: state.pageKey,
-      child: const RegisterScreen(),
+      child: BlocProvider(
+        create: (context) => serviceLocator<RegisterCubit>(),
+        child: const RegisterScreen(),
+      ),
       transitionDuration: const Duration(milliseconds: 300),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         return FadeTransition(opacity: animation, child: child);

@@ -40,7 +40,7 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
         curve: Curves.easeInOutQuint,
         duration: const Duration(milliseconds: 500),
         width: widget.isLoading
-            ? screenWidth * 0.4
+            ? screenWidth * 0.5
             : (widget.width ?? screenWidth),
         height: widget.height,
         child: ElevatedButton(
@@ -58,16 +58,13 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
             ),
           ),
           child: widget.isLoading
-              ? const SizedBox(
-                  height: 24,
-                  width: 24,
-                  child: CircularProgressIndicator(
-                    strokeWidth: 2.5,
-                    valueColor: AlwaysStoppedAnimation<Color>(
-                      AppColors.colorWhite,
-                    ),
-                  ),
-                )
+              ? SizedBox(
+                width: 20,
+                height: 20,
+                child: CircularProgressIndicator(
+                  color: AppColors.colorWhite,
+                ),
+              )
               : Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.min,

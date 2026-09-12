@@ -12,7 +12,8 @@
       "forgotPassword": "نسيت كلمة المرور",
       "noAccount": "ليس لديك حساب؟",
       "joinUs": "انضم إلينا",
-      "google": "جوجل"
+      "google": "جوجل",
+      "successMessage": "تم تسجيل الدخول بنجاح"
     },
     "register": {
       "title": "إنشاء حساب",
@@ -22,7 +23,8 @@
       "password": "كلمة المرور",
       "registerButton": "تسجيل",
       "hasAccount": "لديك حساب بالفعل؟",
-      "login": "تسجيل الدخول"
+      "login": "تسجيل الدخول",
+      "successMessage": "تم التسجيل بنجاح"
     },
     "forget":{
       "subtitle":"أدخل بريدك الإلكتروني لإجراء عملية التحقق",

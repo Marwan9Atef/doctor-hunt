@@ -12,7 +12,8 @@
       "forgotPassword": "Forgot password",
       "noAccount": "Don't have an account?",
       "joinUs": "Join us",
-      "google": "Google"
+      "google": "Google",
+      "successMessage": "Login successful"
     },
     "register": {
       "title": "Create Account",
@@ -22,7 +23,8 @@
       "password": "Password",
       "registerButton": "Register",
       "hasAccount": "Already have an account?",
-      "login": "Login"
+      "login": "Login",
+      "successMessage": "Registration successful"
     },
     "forget":{
       "subtitle":"Enter your email for verification",

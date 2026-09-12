@@ -182,6 +182,7 @@ class _Translations$auth$login$ar extends Translations$auth$login$en {
 	@override String get noAccount => 'ليس لديك حساب؟';
 	@override String get joinUs => 'انضم إلينا';
 	@override String get google => 'جوجل';
+	@override String get successMessage => 'تم تسجيل الدخول بنجاح';
 }
 
 // Path: auth.register
@@ -199,6 +200,7 @@ class _Translations$auth$register$ar extends Translations$auth$register$en {
 	@override String get registerButton => 'تسجيل';
 	@override String get hasAccount => 'لديك حساب بالفعل؟';
 	@override String get login => 'تسجيل الدخول';
+	@override String get successMessage => 'تم التسجيل بنجاح';
 }
 
 // Path: auth.forget
@@ -322,6 +324,7 @@ extension on TranslationsAr {
 			'auth.login.noAccount' => 'ليس لديك حساب؟',
 			'auth.login.joinUs' => 'انضم إلينا',
 			'auth.login.google' => 'جوجل',
+			'auth.login.successMessage' => 'تم تسجيل الدخول بنجاح',
 			'auth.register.title' => 'إنشاء حساب',
 			'auth.register.subtitle' => 'سجل للبدء مع حسابك',
 			'auth.register.name' => 'الاسم',
@@ -330,6 +333,7 @@ extension on TranslationsAr {
 			'auth.register.registerButton' => 'تسجيل',
 			'auth.register.hasAccount' => 'لديك حساب بالفعل؟',
 			'auth.register.login' => 'تسجيل الدخول',
+			'auth.register.successMessage' => 'تم التسجيل بنجاح',
 			'auth.forget.subtitle' => 'أدخل بريدك الإلكتروني لإجراء عملية التحقق',
 			'auth.forget.send' => 'إرسال',
 			'auth.role.title' => 'اختر دورك',
