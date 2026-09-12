@@ -14,6 +14,7 @@ List<RouteBase> get $appRoutes => [
   $doctorDetailsRoute,
   $appointmentRoute,
   $layoutShellRoute,
+  $adminLayoutShellRoute,
 ];
 
 RouteBase get $onboardingRoute => GoRouteData.$route(
@@ -186,7 +187,7 @@ RouteBase get $layoutShellRoute => ShellRouteData.$route(
   routes: [
     GoRouteData.$route(
       path: '/home',
-      name: 'home',
+      name: 'patientHome',
       hasOverriddenOnExit: false,
       factory: $PatientHomeRoute._fromState,
     ),
@@ -285,6 +286,71 @@ mixin $PatientCommunicateRoute on GoRouteData {
 
   @override
   String get location => GoRouteData.$location('/communicate');
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+RouteBase get $adminLayoutShellRoute => ShellRouteData.$route(
+  factory: $AdminLayoutShellRouteExtension._fromState,
+  routes: [
+    GoRouteData.$route(
+      path: '/adminHome',
+      name: 'adminHome',
+      hasOverriddenOnExit: false,
+      factory: $AdminHomeRoute._fromState,
+    ),
+    GoRouteData.$route(
+      path: '/adminSetting',
+      name: 'adminSetting',
+      hasOverriddenOnExit: false,
+      factory: $AdminSettingRoute._fromState,
+    ),
+  ],
+);
+
+extension $AdminLayoutShellRouteExtension on AdminLayoutShellRoute {
+  static AdminLayoutShellRoute _fromState(GoRouterState state) =>
+      const AdminLayoutShellRoute();
+}
+
+mixin $AdminHomeRoute on GoRouteData {
+  static AdminHomeRoute _fromState(GoRouterState state) =>
+      const AdminHomeRoute();
+
+  @override
+  String get location => GoRouteData.$location('/adminHome');
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin $AdminSettingRoute on GoRouteData {
+  static AdminSettingRoute _fromState(GoRouterState state) =>
+      const AdminSettingRoute();
+
+  @override
+  String get location => GoRouteData.$location('/adminSetting');
 
   @override
   void go(BuildContext context) => context.go(location);

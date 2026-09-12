@@ -1,4 +1,6 @@
 import 'package:doctor_hunt/feature/Patient/book/presentation/screens/appointment_screen.dart';
+import 'package:doctor_hunt/feature/admin/home/presentation/screens/admin_home_screen.dart';
+import 'package:doctor_hunt/feature/admin/setting/presnetation/screens/settings_screen.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/screens/login_screen.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/screens/register_screen.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/screens/set_role_screen.dart';
@@ -151,7 +153,7 @@ class AppointmentRoute extends GoRouteData with $AppointmentRoute {
 
 @TypedShellRoute<LayoutShellRoute>(
   routes: <TypedRoute<RouteData>>[
-    TypedGoRoute<PatientHomeRoute>(path: '/home', name: 'home'),
+    TypedGoRoute<PatientHomeRoute>(path: '/home', name: 'patientHome'),
     TypedGoRoute<PatientFavRoute>(path: '/fav', name: 'fav'),
     TypedGoRoute<PatientBookRoute>(path: '/book', name: 'book'),
     TypedGoRoute<PatientCommunicateRoute>(
@@ -162,6 +164,24 @@ class AppointmentRoute extends GoRouteData with $AppointmentRoute {
 )
 class LayoutShellRoute extends ShellRouteData {
   const LayoutShellRoute();
+
+  @override
+  Widget builder(BuildContext context, GoRouterState state, Widget navigator) {
+    return LayoutScreen(child: navigator);
+  }
+}
+
+@TypedShellRoute<AdminLayoutShellRoute>(
+  routes: <TypedRoute<RouteData>>[
+    TypedGoRoute<AdminHomeRoute>(path: '/adminHome', name: 'adminHome'),
+    TypedGoRoute<AdminSettingRoute>(
+      path: '/adminSetting',
+      name: 'adminSetting',
+    ),
+  ],
+)
+class AdminLayoutShellRoute extends ShellRouteData {
+  const AdminLayoutShellRoute();
 
   @override
   Widget builder(BuildContext context, GoRouterState state, Widget navigator) {
@@ -203,5 +223,23 @@ class PatientCommunicateRoute extends GoRouteData
   @override
   Widget build(BuildContext context, GoRouterState state) {
     return const PatientCommunicationScreen();
+  }
+}
+
+class AdminHomeRoute extends GoRouteData with $AdminHomeRoute {
+  const AdminHomeRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const AdminHomeScreen();
+  }
+}
+
+class AdminSettingRoute extends GoRouteData with $AdminSettingRoute {
+  const AdminSettingRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const SettingsScreen();
   }
 }

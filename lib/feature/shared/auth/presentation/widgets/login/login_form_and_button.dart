@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/config/user_config.dart';
 import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/router/route_center.dart';
 import 'package:doctor_hunt/core/theme/app_colors.dart';
@@ -29,27 +30,31 @@ class LoginFormAndButton extends StatelessWidget {
         CustomElevatedButton(
           text: context.t.auth.login.loginButton,
           onPressed: () {
-            context.go(PatientHomeRoute().location);
+            if (UserConfig.isAdmin) {
+              context.go(AdminHomeRoute().location);
+            } else {
+              context.go(PatientHomeRoute().location);
+            }
           },
         ),
         const SizedBox(height: 18),
         GestureDetector(
-          onTap: (){
-               showModalBottomSheet(
-          constraints: BoxConstraints(minWidth: double.infinity),
-          context: context,
-          isScrollControlled: true,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(25),
-          ),
-          clipBehavior: Clip.antiAliasWithSaveLayer,
-          builder: (context) => Padding(
-            padding: EdgeInsets.only(
-              bottom: MediaQuery.of(context).viewInsets.bottom,
-            ),
-            child: ForgetScreen(),
-          ),
-        );
+          onTap: () {
+            showModalBottomSheet(
+              constraints: BoxConstraints(minWidth: double.infinity),
+              context: context,
+              isScrollControlled: true,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25),
+              ),
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              builder: (context) => Padding(
+                padding: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).viewInsets.bottom,
+                ),
+                child: ForgetScreen(),
+              ),
+            );
           },
           child: Align(
             alignment: Alignment.centerRight,

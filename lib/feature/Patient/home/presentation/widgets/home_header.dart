@@ -1,8 +1,8 @@
-import 'package:doctor_hunt/core/asset/app_assets.dart';
 import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:doctor_hunt/core/theme/app_styles.dart';
 import 'package:doctor_hunt/core/widgets/custom_search_bar.dart';
+import 'package:doctor_hunt/core/widgets/image_profile.dart';
 import 'package:flutter/material.dart';
 
 class HomeHeader extends StatelessWidget {
@@ -55,15 +55,7 @@ class HomeHeader extends StatelessWidget {
                     ),
                   ],
                 ),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(30),
-                  child: Image.asset(
-                    Assets.assetsImagesProfile,
-                    width: 60,
-                    height: 60,
-                    fit: BoxFit.cover,
-                  ),
-                ),
+             const ImageProfile()
               ],
             ),
           ),

@@ -1,0 +1,7 @@
+targets:
+  $default:
+    builders:
+      slang_build_runner:
+        enabled: false
+      go_router_builder:
+        enabled: true

@@ -49,7 +49,12 @@
     "live": "مباشر",
      "liveTitle":"أطباء مباشر",
      "PopularTitle":"اطباء مشهورين",
-     "seeAll":"عرض الكل"
+     "seeAll":"عرض الكل",
+     "adminTitle":"دكتور",
+     "adminInfo":{
+      "totalDoctors":"إجمالي الأطباء",
+      "activeDoctors":"الأطباء النشطين"
+    }
   },
     "fav":{
     "favTitle":"دكتورك المفضل"
@@ -72,7 +77,8 @@
     "home": "الرئيسية",
     "favorites": "المفضلة",
     "bookings": "الحجوزات",
-    "communicate": "التواصل"
+    "communicate": "التواصل",
+     "adminSetting":"الإعدادات"
   },
   "onboarding": {
     "getStarted": "ابدأ الآن",

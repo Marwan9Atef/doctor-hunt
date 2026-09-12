@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/config/user_config.dart';
 import 'package:doctor_hunt/core/i18n/strings.g.dart';
 import 'package:doctor_hunt/core/router/route_center.dart';
 import 'package:doctor_hunt/feature/shared/auth/presentation/widgets/auth_text_nav.dart';
@@ -25,12 +26,15 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(height: 32),
                 const GoogleButton(),
                 const SizedBox(height: 32),
-                AuthTextNav(
-                  onTap: () {
-                    RegisterRoute().go(context);
-                  },
-                  prefText: context.t.auth.login.noAccount,
-                  suffixText: context.t.auth.login.joinUs,
+                Visibility(
+                  visible: !UserConfig.isAdmin,
+                  child: AuthTextNav(
+                    onTap: () {
+                      RegisterRoute().go(context);
+                    },
+                    prefText: context.t.auth.login.noAccount,
+                    suffixText: context.t.auth.login.joinUs,
+                  ),
                 ),
               ],
             ),

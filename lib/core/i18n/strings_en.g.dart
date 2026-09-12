@@ -102,6 +102,11 @@ class Translations$home$en {
 
 	/// en: 'See all'
 	String get seeAll => 'See all';
+
+	/// en: 'Doctors'
+	String get adminTitle => 'Doctors';
+
+	late final Translations$home$adminInfo$en adminInfo = Translations$home$adminInfo$en.internal(_root);
 }
 
 // Path: fav
@@ -180,6 +185,9 @@ class Translations$navigation$en {
 
 	/// en: 'Communicate'
 	String get communicate => 'Communicate';
+
+	/// en: 'Setting'
+	String get adminSetting => 'Setting';
 }
 
 // Path: onboarding
@@ -325,6 +333,21 @@ class Translations$auth$role$en {
 	late final Translations$auth$role$admin$en admin = Translations$auth$role$admin$en.internal(_root);
 }
 
+// Path: home.adminInfo
+class Translations$home$adminInfo$en {
+	Translations$home$adminInfo$en.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+
+	/// en: 'Total Doctors'
+	String get totalDoctors => 'Total Doctors';
+
+	/// en: 'Active Doctors'
+	String get activeDoctors => 'Active Doctors';
+}
+
 // Path: onboarding.screens
 class Translations$onboarding$screens$en {
 	Translations$onboarding$screens$en.internal(this._root);
@@ -453,6 +476,9 @@ extension on Translations {
 			'home.liveTitle' => 'Live Doctors',
 			'home.PopularTitle' => 'Popular Doctor',
 			'home.seeAll' => 'See all',
+			'home.adminTitle' => 'Doctors',
+			'home.adminInfo.totalDoctors' => 'Total Doctors',
+			'home.adminInfo.activeDoctors' => 'Active Doctors',
 			'fav.favTitle' => 'Favourite Doctors',
 			'book.bookTitle' => 'Find Doctors',
 			'book.bookButton' => 'Book Now',
@@ -467,6 +493,7 @@ extension on Translations {
 			'navigation.favorites' => 'Fav',
 			'navigation.bookings' => 'Book',
 			'navigation.communicate' => 'Communicate',
+			'navigation.adminSetting' => 'Setting',
 			'onboarding.getStarted' => 'Get Started',
 			'onboarding.next' => 'Next',
 			'onboarding.skip' => 'Skip',
