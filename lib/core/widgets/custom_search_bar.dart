@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomSearchBar extends StatefulWidget {
-  const CustomSearchBar({super.key});
+  const CustomSearchBar({super.key,this.radius=6});
+  final double radius;
 
   @override
   State<CustomSearchBar> createState() => _CustomSearchBarState();
@@ -87,14 +88,14 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
               )
             : null,
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(widget.radius),
           borderSide: BorderSide(
             color: AppColors.colorSlateGray.withValues(alpha: 0.3),
             width: 1,
           ),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(6),
+          borderRadius: BorderRadius.circular(widget.radius),
           borderSide: BorderSide(
             color: AppColors.colorSlateGray.withValues(alpha: 0.3),
             width: 1,

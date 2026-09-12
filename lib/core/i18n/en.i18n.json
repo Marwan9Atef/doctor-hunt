@@ -49,7 +49,12 @@
     "live": "Live",
     "liveTitle":"Live Doctors",
     "PopularTitle":"Popular Doctor",
-    "seeAll":"See all"
+    "seeAll":"See all",
+    "adminTitle":"Doctors",
+    "adminInfo":{
+      "totalDoctors":"Total Doctors",
+      "activeDoctors":"Active Doctors"
+    }
   },
   "fav":{
     "favTitle":"Favourite Doctors"

@@ -84,6 +84,8 @@ class _Translations$home$ar extends Translations$home$en {
 	@override String get liveTitle => 'أطباء مباشر';
 	@override String get PopularTitle => 'اطباء مشهورين';
 	@override String get seeAll => 'عرض الكل';
+	@override String get adminTitle => 'دكتور';
+	@override late final _Translations$home$adminInfo$ar adminInfo = _Translations$home$adminInfo$ar._(_root);
 }
 
 // Path: fav
@@ -195,6 +197,17 @@ class _Translations$auth$role$ar extends Translations$auth$role$en {
 	@override late final _Translations$auth$role$admin$ar admin = _Translations$auth$role$admin$ar._(_root);
 }
 
+// Path: home.adminInfo
+class _Translations$home$adminInfo$ar extends Translations$home$adminInfo$en {
+	_Translations$home$adminInfo$ar._(TranslationsAr root) : this._root = root, super.internal(root);
+
+	final TranslationsAr _root; // ignore: unused_field
+
+	// Translations
+	@override String get totalDoctors => 'إجمالي الأطباء';
+	@override String get activeDoctors => 'الأطباء النشطين';
+}
+
 // Path: onboarding.screens
 class _Translations$onboarding$screens$ar extends Translations$onboarding$screens$en {
 	_Translations$onboarding$screens$ar._(TranslationsAr root) : this._root = root, super.internal(root);
@@ -303,6 +316,9 @@ extension on TranslationsAr {
 			'home.liveTitle' => 'أطباء مباشر',
 			'home.PopularTitle' => 'اطباء مشهورين',
 			'home.seeAll' => 'عرض الكل',
+			'home.adminTitle' => 'دكتور',
+			'home.adminInfo.totalDoctors' => 'إجمالي الأطباء',
+			'home.adminInfo.activeDoctors' => 'الأطباء النشطين',
 			'fav.favTitle' => 'دكتورك المفضل',
 			'navigation.home' => 'الرئيسية',
 			'navigation.favorites' => 'المفضلة',
