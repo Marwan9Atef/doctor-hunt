@@ -58,7 +58,8 @@
     "home": "الرئيسية",
     "favorites": "المفضلة",
     "bookings": "الحجوزات",
-    "communicate": "التواصل"
+    "communicate": "التواصل",
+     "adminSetting":"الإعدادات"
   },
   "onboarding": {
     "getStarted": "ابدأ الآن",

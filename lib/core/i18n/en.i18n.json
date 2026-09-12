@@ -58,7 +58,8 @@
     "home": "Home",
     "favorites": "Fav",
     "bookings": "Book",
-    "communicate": "Communicate"
+    "communicate": "Communicate",
+    "adminSetting":"Setting"
   },
   "onboarding": {
     "getStarted": "Get Started",

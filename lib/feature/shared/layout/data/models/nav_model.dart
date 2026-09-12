@@ -1,6 +1,5 @@
 import 'package:doctor_hunt/core/asset/app_assets.dart';
 import 'package:doctor_hunt/core/i18n/strings.g.dart';
-import 'package:flutter/material.dart';
 
 class NavItem {
   final String icon;
@@ -9,25 +8,37 @@ class NavItem {
 
   const NavItem({required this.icon, required this.label, required this.route});
 
-  static List<NavItem> getNavItems(BuildContext context) => [
+  static List<NavItem> get getAdminNavItems => [
+    NavItem(
+      icon: Assets.assetsImagesAdminHome,
+      label: t.navigation.home,
+      route: '/adminHome',
+    ),
+    NavItem(
+      icon: Assets.assetsImagesAdminSetting,
+      label: t.navigation.adminSetting,
+      route: '/adminSetting',
+    ),
+  ];
+  static List<NavItem> get getPatientNavItems => [
     NavItem(
       icon: Assets.assetsImagesHome,
-      label: context.t.navigation.home,
+      label: t.navigation.home,
       route: '/home',
     ),
     NavItem(
       icon: Assets.assetsImagesFav,
-      label: context.t.navigation.favorites,
+      label: t.navigation.favorites,
       route: '/fav',
     ),
     NavItem(
       icon: Assets.assetsImagesBook,
-      label: context.t.navigation.bookings,
+      label: t.navigation.bookings,
       route: '/book',
     ),
     NavItem(
       icon: Assets.assetsImagesMessage,
-      label: context.t.navigation.communicate,
+      label: t.navigation.communicate,
       route: '/communicate',
     ),
   ];

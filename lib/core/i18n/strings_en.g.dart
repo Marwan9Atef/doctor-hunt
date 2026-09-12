@@ -133,6 +133,9 @@ class Translations$navigation$en {
 
 	/// en: 'Communicate'
 	String get communicate => 'Communicate';
+
+	/// en: 'Setting'
+	String get adminSetting => 'Setting';
 }
 
 // Path: onboarding
@@ -411,6 +414,7 @@ extension on Translations {
 			'navigation.favorites' => 'Fav',
 			'navigation.bookings' => 'Book',
 			'navigation.communicate' => 'Communicate',
+			'navigation.adminSetting' => 'Setting',
 			'onboarding.getStarted' => 'Get Started',
 			'onboarding.next' => 'Next',
 			'onboarding.skip' => 'Skip',

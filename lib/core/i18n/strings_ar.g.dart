@@ -107,6 +107,7 @@ class _Translations$navigation$ar extends Translations$navigation$en {
 	@override String get favorites => 'المفضلة';
 	@override String get bookings => 'الحجوزات';
 	@override String get communicate => 'التواصل';
+	@override String get adminSetting => 'الإعدادات';
 }
 
 // Path: onboarding
@@ -307,6 +308,7 @@ extension on TranslationsAr {
 			'navigation.favorites' => 'المفضلة',
 			'navigation.bookings' => 'الحجوزات',
 			'navigation.communicate' => 'التواصل',
+			'navigation.adminSetting' => 'الإعدادات',
 			'onboarding.getStarted' => 'ابدأ الآن',
 			'onboarding.next' => 'التالي',
 			'onboarding.skip' => 'تخطي',

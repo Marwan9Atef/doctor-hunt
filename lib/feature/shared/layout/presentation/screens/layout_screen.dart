@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/config/user_config.dart';
 import 'package:doctor_hunt/core/theme/app_colors.dart';
 import 'package:doctor_hunt/feature/shared/layout/data/models/nav_model.dart';
 import 'package:doctor_hunt/feature/shared/layout/presentation/widgets/nav_bar_item.dart';
@@ -9,6 +10,10 @@ class LayoutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final navItems = UserConfig.isAdmin
+        ? NavItem.getAdminNavItems
+        : NavItem.getPatientNavItems;
+
     return Scaffold(
       body: child,
       bottomNavigationBar: Container(
@@ -29,12 +34,12 @@ class LayoutScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: List.generate(
-                NavItem.getNavItems(context).length,
+                navItems.length,
                 (index) => NavBarItem(
-                  item: NavItem.getNavItems(context)[index],
+                  item: navItems[index],
                   isActive: NavBarItem.isRouteActive(
                     context,
-                    NavItem.getNavItems(context)[index].route,
+                    navItems[index].route,
                   ),
                 ),
               ),
