@@ -54,6 +54,21 @@
   "fav":{
     "favTitle":"Favourite Doctors"
   },
+  "book":{
+    "bookTitle":"Find Doctors",
+    "bookButton":"Book Now",
+    "appointmentTitle":"Appointment",
+    "availableTime":"Available Time"
+  },
+  "doctorDetails":{
+    "doctorDetailsTitle":"Doctor Details",
+    "runing":"Runing",
+    "ongoing":"Ongoing",
+    "patient":"Patient",
+    "service":"Service"
+    
+
+  },
   "navigation": {
     "home": "Home",
     "favorites": "Fav",
