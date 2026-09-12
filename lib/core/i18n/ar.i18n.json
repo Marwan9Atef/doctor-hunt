@@ -1,0 +1,109 @@
+{
+  "app": {
+    "name": "دكتور هانت"
+  },
+  "auth": {
+    "login": {
+      "title": "مرحباً بعودتك",
+      "subtitle": "سجل الدخول للوصول إلى حسابك وإدارة تجربتك الصحية",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "loginButton": "تسجيل الدخول",
+      "forgotPassword": "نسيت كلمة المرور",
+      "noAccount": "ليس لديك حساب؟",
+      "joinUs": "انضم إلينا",
+      "google": "جوجل",
+      "successMessage": "تم تسجيل الدخول بنجاح"
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "subtitle": "سجل للبدء مع حسابك",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "registerButton": "تسجيل",
+      "hasAccount": "لديك حساب بالفعل؟",
+      "login": "تسجيل الدخول",
+      "successMessage": "تم التسجيل بنجاح"
+    },
+    "forget":{
+      "subtitle":"أدخل بريدك الإلكتروني لإجراء عملية التحقق",
+      "send":"إرسال"
+
+    },
+    "role": {
+      "title": "اختر دورك",
+      "subtitle": "الدور المحدد يحدد التجربة والميزات المتاحة",
+      "continueButton": "متابعة",
+      "patient": {
+        "title": "مريض",
+        "description": "ابحث عن الأطباء، احجز المواعيد، وأدر سجلاتك الطبية."
+      },
+      "admin": {
+        "title": "مسؤول",
+        "description": "إدارة الأطباء والمواعيد والمستخدمين والمنصة."
+      }
+    }
+  },
+  "home": {
+    "greeting": "مرحباً {name}!",
+    "title": "ابحث عن طبيبك",
+    "live": "مباشر",
+     "liveTitle":"أطباء مباشر",
+     "PopularTitle":"اطباء مشهورين",
+     "seeAll":"عرض الكل",
+     "adminTitle":"دكتور",
+     "adminInfo":{
+      "totalDoctors":"إجمالي الأطباء",
+      "activeDoctors":"الأطباء النشطين"
+    }
+  },
+    "fav":{
+    "favTitle":"دكتورك المفضل"
+  },
+    "book":{
+    "bookTitle":"اعثر على أطباء",
+    "bookButton":"احجز الآن",
+     "appointmentTitle":"الحجوزات",
+     "availableTime":"الوقت المتاح"
+  },
+    "doctorDetails":{
+    "doctorDetailsTitle":"تفاصيل عن الدكتور",
+    "runing":"جارية",
+    "ongoing":"مستمرة",
+    "patient":"مرضى",
+    "service":"خدمات"
+
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "favorites": "المفضلة",
+    "bookings": "الحجوزات",
+    "communicate": "التواصل",
+     "adminSetting":"الإعدادات"
+  },
+  "onboarding": {
+    "getStarted": "ابدأ الآن",
+    "next": "التالي",
+    "skip": "تخطي",
+    "screens": {
+      "screen1": {
+        "title": "ابحث عن أطباء موثوقين",
+        "description": "تصفح شبكة أطبائنا المعتمدين وابحث عن الطبيب المثالي لاحتياجاتك."
+      },
+      "screen2": {
+        "title": "اختر أفضل الأطباء",
+        "description": "قارن بين الأطباء حسب التخصص والتقييمات والتوافر لاتخاذ قرارات مستنيرة بشأن رعايتك الصحية."
+      },
+      "screen3": {
+        "title": "مواعيد سهلة",
+        "description": "احجز المواعيد فوراً، وأدر جدولك، وتلق تذكيرات لزياراتك القادمة."
+      }
+    }
+  },
+  "common": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم"
+  }
+}
