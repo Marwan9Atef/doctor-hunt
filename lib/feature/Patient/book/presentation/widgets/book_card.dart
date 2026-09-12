@@ -13,7 +13,7 @@ class BookCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        DoctorDetailsRoute().push(context);
+        AppointmentRoute().push(context);
       },
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 18, horizontal: 20),

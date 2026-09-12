@@ -56,7 +56,9 @@
   },
   "book":{
     "bookTitle":"Find Doctors",
-    "bookButton":"Book Now"
+    "bookButton":"Book Now",
+    "appointmentTitle":"Appointment",
+    "availableTime":"Available Time"
   },
   "doctorDetails":{
     "doctorDetailsTitle":"Doctor Details",
@@ -64,6 +66,7 @@
     "ongoing":"Ongoing",
     "patient":"Patient",
     "service":"Service"
+    
 
   },
   "navigation": {

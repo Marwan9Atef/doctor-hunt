@@ -56,7 +56,9 @@
   },
     "book":{
     "bookTitle":"اعثر على أطباء",
-    "bookButton":"احجز الآن"
+    "bookButton":"احجز الآن",
+     "appointmentTitle":"الحجوزات",
+     "availableTime":"الوقت المتاح"
   },
     "doctorDetails":{
     "doctorDetailsTitle":"تفاصيل عن الدكتور",

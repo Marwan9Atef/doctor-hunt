@@ -107,6 +107,8 @@ class _Translations$book$ar extends Translations$book$en {
 	// Translations
 	@override String get bookTitle => 'اعثر على أطباء';
 	@override String get bookButton => 'احجز الآن';
+	@override String get appointmentTitle => 'الحجوزات';
+	@override String get availableTime => 'الوقت المتاح';
 }
 
 // Path: doctorDetails
@@ -332,6 +334,8 @@ extension on TranslationsAr {
 			'fav.favTitle' => 'دكتورك المفضل',
 			'book.bookTitle' => 'اعثر على أطباء',
 			'book.bookButton' => 'احجز الآن',
+			'book.appointmentTitle' => 'الحجوزات',
+			'book.availableTime' => 'الوقت المتاح',
 			'doctorDetails.doctorDetailsTitle' => 'تفاصيل عن الدكتور',
 			'doctorDetails.runing' => 'جارية',
 			'doctorDetails.ongoing' => 'مستمرة',

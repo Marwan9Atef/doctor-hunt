@@ -129,6 +129,12 @@ class Translations$book$en {
 
 	/// en: 'Book Now'
 	String get bookButton => 'Book Now';
+
+	/// en: 'Appointment'
+	String get appointmentTitle => 'Appointment';
+
+	/// en: 'Available Time'
+	String get availableTime => 'Available Time';
 }
 
 // Path: doctorDetails
@@ -450,6 +456,8 @@ extension on Translations {
 			'fav.favTitle' => 'Favourite Doctors',
 			'book.bookTitle' => 'Find Doctors',
 			'book.bookButton' => 'Book Now',
+			'book.appointmentTitle' => 'Appointment',
+			'book.availableTime' => 'Available Time',
 			'doctorDetails.doctorDetailsTitle' => 'Doctor Details',
 			'doctorDetails.runing' => 'Runing',
 			'doctorDetails.ongoing' => 'Ongoing',
